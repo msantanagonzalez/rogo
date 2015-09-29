@@ -28,8 +28,10 @@
             <!-- BUSCAR -->
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...." aria-describedby="basic-addon2">
-                <span class="input-group-addon" id="basic-addon2">Buscar</span>
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Buscar</button>
+                </span>
               </div>
             </div>
             <!-- USUARIO -->
@@ -66,18 +68,55 @@
                     REGISTRO
                     <br>
                     <br>
-                        <input type="text" class="form-control" placeholder="Nombre" aria-describedby="basic-addon2">
-                        <br>
-                        <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon2">
-                        <br>
-                        <input type="text" class="form-control" placeholder="Alias" aria-describedby="basic-addon2">
-                        <br>
-                        <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon2">
-                        <br>
-                        <input type="button" class="form-control" value="Registrarse" style="width:30%;">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Nombre">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Alias">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <button type="submit" class="btn btn-primary">Registrarse</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 registroContainer">
                     LOGIN
+                    <br>
+                    <br>
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Usuario">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <input type="text" class="form-control" id="inputEmail" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-8 col-lg-offset-2">
+                          <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
                 </div>
             </div>
