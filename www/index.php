@@ -217,15 +217,19 @@
 
         <!-- CONTENIDO -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <div class="IndexCategoria col-lg-4 col-md-4 col-sm-4 col-xs-">
-            <a href="#" class="list-group-item list-group-item-success">Ciencia</a>
-            <a href="#" class="list-group-item list-group-item-info">Tecnologia</a>
-            <a href="#" class="list-group-item list-group-item-warning">Deporte</a>
-            <a href="#" class="list-group-item list-group-item-danger">Arte</a>
-            <a href="#" class="list-group-item list-group-item-danger">Programacion</a>
+
+          <!-- Principio Ordenacion Categoria -->
+          <div class="IndexCategoria col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <a href="#" class="list-group-item ">Ciencia</a>
+            <a href="#" class="list-group-item ">Tecnologia</a>
+            <a href="#" class="list-group-item ">Deporte</a>
+            <a href="#" class="list-group-item ">Arte</a>
+            <a href="#" class="list-group-item ">Programacion</a>
           </div>
+          <!-- Fin Ordenacion Categoria -->
+
           <!-- Principio Historial -->
-          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
           <BR>
           <BR>
           <BR>
