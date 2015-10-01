@@ -156,25 +156,25 @@
                   <!-- Wrapper for slides -->
                   <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                      <img class="carouselImageContainer" src="Resources/images/carouselExample.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
                       <div class="carousel-caption">
-                        <h1>Categoria</h1>
+                        <h1>Programacion</h1>
                         <p>Pregunta1</p>
                         <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
                     <div class="item">
-                      <img class="carouselImageContainer" src="Resources/images/carouselExample.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselCiencia.png" alt="...">
                       <div class="carousel-caption">
-                        <h1>Categoria</h1>
+                        <h1>Ciencia</h1>
                         <p>Pregunta2</p>
                         <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
                     <div class="item">
-                      <img class="carouselImageContainer" src="Resources/images/carouselExample.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Categoria</h1>
                         <p>Pregunta3</p>
@@ -183,7 +183,7 @@
                     </div>
 
                     <div class="item">
-                      <img class="carouselImageContainer" src="Resources/images/carouselExample.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Categoria</h1>
                         <p>Pregunta4</p>
