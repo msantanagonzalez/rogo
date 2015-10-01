@@ -24,6 +24,7 @@ color: #04b6d1;
 .headContainer {
   padding-top: 20px;
   background-color: #041c47;
+  /*background-color:#111314;*/
 }
 
 .buscarContainer{
@@ -51,7 +52,7 @@ color: #04b6d1;
 
 .indexLogoContainer {
   position: absolute;
-  top: 50%;
+  top: 10%; /*Before: 50% */
   right: 0;
   z-index: 10;
 }
@@ -81,11 +82,11 @@ color: #04b6d1;
 .carouselImageContainer{
   width: 1024px;
   max-height: 500px;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .IndexCategoria{
@@ -114,8 +115,8 @@ color: #04b6d1;
 }
 
 .indexCircle{
-  width: 350px;
-  height: 350px;
+  width: 250px; /*before:250*/
+  height: 250px;
   position: absolute;
   top: 0px;
   right: 0px;

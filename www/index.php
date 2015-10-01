@@ -70,7 +70,7 @@
               <!-- LOGO -->
               <div class="indexCircle visible-lg visible-md">
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 indexLogoContainer text-center visible-lg visible-md">
+              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 indexLogoContainer text-right visible-lg visible-md">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
               <!-- Fin Logo-->
@@ -151,6 +151,7 @@
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                   </ol>
 
                   <!-- Wrapper for slides -->
@@ -176,17 +177,26 @@
                     <div class="item">
                       <img class="carouselImageContainer" src="Resources/images/carouselDeporte.png" alt="...">
                       <div class="carousel-caption">
-                        <h1>Categoria</h1>
+                        <h1>Deporte</h1>
                         <p>Pregunta3</p>
                         <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
                     <div class="item">
-                      <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselArte.png" alt="...">
                       <div class="carousel-caption">
-                        <h1>Categoria</h1>
+                        <h1>Arte</h1>
                         <p>Pregunta4</p>
+                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <img class="carouselImageContainer" src="Resources/images/carouselTecnologia.png" alt="...">
+                      <div class="carousel-caption">
+                        <h1>Tecnologia</h1>
+                        <p>Pregunta5</p>
                         <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
