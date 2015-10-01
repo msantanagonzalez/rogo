@@ -97,6 +97,13 @@ color: #04b6d1;
   background-color: #041c47;
 
 }
+.IndexCategoria a{
+  color: #FFF
+
+}
+.TituloCategoria{
+  text-align: center;
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .separator{
   height: 5px;

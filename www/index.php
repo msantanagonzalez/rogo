@@ -174,7 +174,7 @@
                     </div>
 
                     <div class="item">
-                      <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
+                      <img class="carouselImageContainer" src="Resources/images/carouselDeporte.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Categoria</h1>
                         <p>Pregunta3</p>
