@@ -88,6 +88,15 @@ color: #04b6d1;
   filter: blur(1px);
 }
 
+.IndexCategoria{
+    padding-top:10px;
+
+}
+
+.list-group-item{
+  background-color: #041c47;
+  
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .separator{
   height: 5px;

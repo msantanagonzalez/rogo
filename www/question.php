@@ -18,18 +18,25 @@
     <link href="Resources/css/styles.css" rel="stylesheet">
   	<title>Rogo |- Ask and respond </title>
   </head>
+
+  <!-- Principio del Cuerpo de la pagina-->
   <body class="bodyNoise">
     <div class="container-fluid">
 
       <div class="row">
+        <!-- Barra Usuario -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 headContainer headerNoise">
+
           <!-- BUSCAR + LOGO -->
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
+
               <!-- LOGO -->
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center visible-sm visible-xs">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
+              <!-- Fin Logo-->
+
               <!-- BUSCAR -->
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 buscarContainer">
                 <div class="input-group">
@@ -39,6 +46,8 @@
                   </span>
                 </div>
               </div>
+              <!-- Fin Buscar-->
+
               <!-- USUARIO -->
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 iconsContainer">
                 <div class="row">
@@ -56,21 +65,31 @@
                   </div>
                 </div>
               </div>
-              <!-- LOGO -->
+              <!-- Fin Usuario-->
+
+              <!-- LOGO Y CIRCULO-->
               <div class="circle visible-lg visible-md">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logoContainer text-center visible-lg visible-md">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
+              <!-- Fin logo y circulo-->
+
             </div>
           </div>
         </div>
+        <!-- Fin Barra Usuario-->
+
         <!-- CONTENIDO -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         </div>
+        <!-- Fin Contenido-->
+
       </div>
     </div>
   </body>
+  <!-- Fin del Cuerpo de la pagina-->
+
   <!-- jQuery -->
       <script src="Resources/js/jquery.js"></script>
 
