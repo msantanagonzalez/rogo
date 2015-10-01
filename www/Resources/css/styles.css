@@ -104,6 +104,9 @@ color: #04b6d1;
 .TituloCategoria{
   text-align: center;
 }
+.TituloCategoria h1{
+  color: #000
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .separator{
   height: 5px;
