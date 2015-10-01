@@ -18,18 +18,25 @@
     <link href="Resources/css/styles.css" rel="stylesheet">
   	<title>Rogo |- Ask and respond </title>
   </head>
+
+  <!-- Principio del Cuerpo de la pagina-->
   <body class="bodyNoise">
     <div class="container-fluid">
      <div class="row">
-        <!-- CABECERA -->
+
+        <!--  Inicio Barra de herramientas,Carrusel y login -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 headContainer headerNoise">
-          <!-- BUSCAR + LOGO -->
+
+          <!-- BUSCAR,LOGO Y BARRA DE HERRAMIENTAS -->
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
+
               <!-- LOGO -->
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center visible-sm visible-xs">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
+              <!-- Fin Logo-->
+
               <!-- BUSCAR -->
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="input-group">
@@ -39,6 +46,8 @@
                   </span>
                 </div>
               </div>
+              <!-- Fin Buscar-->
+
               <!-- USUARIO -->
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 indexIconsContainer">
                 <div class="row">
@@ -56,14 +65,19 @@
                   </div>
                 </div>
               </div>
+              <!-- Fin Usuario-->
+
               <!-- LOGO -->
               <div class="indexCircle visible-lg visible-md">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 indexLogoContainer text-center visible-lg visible-md">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
+              <!-- Fin Logo-->
+
             </div>
           </div>
+          <!-- Fin Barra de herramientas y logo-->
 
           <!-- REGISTRO + CAROUSEL -->
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -194,9 +208,13 @@
             </div>
           </div>
         </div>
+        <!-- Fin Barra de herramientas,Carrusel y login-->
+
         <!-- SEPARADOR -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator">
         </div>
+        <!-- Fin Separador-->
+
         <!-- CONTENIDO -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <BR>
@@ -228,9 +246,12 @@
                       <BR>
                       <BR>
         </div>
+        <!-- Fin del Cuerpo de la pagina-->
       </div>
     </div>
   </body>
+  <!-- Principio del Cuerpo de la pagina-->
+
   <!-- jQuery -->
       <script src="Resources/js/jquery.js"></script>
 
