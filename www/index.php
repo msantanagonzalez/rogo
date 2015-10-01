@@ -220,11 +220,11 @@
 
           <!-- Principio Ordenacion Categoria -->
           <div class="IndexCategoria col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <a href="#" class="list-group-item ">Ciencia</a>
-            <a href="#" class="list-group-item ">Tecnologia</a>
-            <a href="#" class="list-group-item ">Deporte</a>
-            <a href="#" class="list-group-item ">Arte</a>
-            <a href="#" class="list-group-item ">Programacion</a>
+            <a href="ciencia.php" class="list-group-item ">Ciencia</a>
+            <a href="tecnologia.php" class="list-group-item ">Tecnologia</a>
+            <a href="deporte.php" class="list-group-item ">Deporte</a>
+            <a href="arte.php" class="list-group-item ">Arte</a>
+            <a href="programacion.php" class="list-group-item ">Programacion</a>
           </div>
           <!-- Fin Ordenacion Categoria -->
 
