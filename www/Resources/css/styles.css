@@ -81,11 +81,11 @@ color: #04b6d1;
 .carouselImageContainer{
   width: 1024px;
   max-height: 500px;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
 
 .IndexCategoria{
@@ -95,7 +95,7 @@ color: #04b6d1;
 
 .list-group-item{
   background-color: #041c47;
-  
+
 }
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .separator{
