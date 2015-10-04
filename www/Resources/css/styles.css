@@ -11,6 +11,9 @@ body {
 .lightBlue{
 color: #04b6d1;
 }
+.lightGreen{
+color: #4ac143;
+}
 /* ------------------------- Textures  -----------------------*/
 
 .bodyNoise{
@@ -160,7 +163,10 @@ color: #04b6d1;
   width: 12px;
   height: 12px;
   margin: 0;
+  /*Blue:*/
   background-color: #04b6d1;
+  /*Green:*/
+  /*background-color: #4ac143;*/
 }
 
 .carousel-caption {
@@ -188,12 +194,14 @@ color: #04b6d1;
   position: absolute;
   /*right: 15%;*/
   top:50%;
-  left:50%;
+  left:20%;
   z-index: 10;
   color: #fff;
   font-size: 3em;
   text-align: left;
   text-shadow: 0 6px 2px #000;
+  /*-webkit-text-stroke: 2px black;*/
+  /*-webkit-text-fill-color: white;*/
 }
 
 .carousel-caption a{
@@ -202,6 +210,18 @@ color: #04b6d1;
   top:80%;
   left: 55%;
   z-index: 10;
+}
+
+.btnCarousel{
+  color: #fff;
+  background-color: #04b6d1;
+  border-color: #04b6d1;
+}
+
+.btnCarousel:hover{
+  color: #000;
+  background-color:#4ac143;
+  border-color: #4ac143;
 }
 
 .btn-default {

@@ -160,8 +160,8 @@
                       <img class="carouselImageContainer" src="Resources/images/carouselProgramacion.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Programacion</h1>
-                        <p>Pregunta1</p>
-                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                        <p>Centrar elemento en un div?</p>
+                        <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
@@ -170,7 +170,7 @@
                       <div class="carousel-caption">
                         <h1>Ciencia</h1>
                         <p>Pregunta2</p>
-                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                        <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
@@ -179,7 +179,7 @@
                       <div class="carousel-caption">
                         <h1>Deporte</h1>
                         <p>Pregunta3</p>
-                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                        <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
@@ -188,7 +188,7 @@
                       <div class="carousel-caption">
                         <h1>Arte</h1>
                         <p>Pregunta4</p>
-                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                        <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
@@ -197,7 +197,7 @@
                       <div class="carousel-caption">
                         <h1>Tecnologia</h1>
                         <p>Pregunta5</p>
-                        <a class="btn btn-lg btn-primary" href="#news1" role="button">Responder &raquo;</a>
+                        <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
 
