@@ -18,13 +18,18 @@ color: #04b6d1;
 }
 
 .headerNoise{
-  background: url(../images/noiseHeader.png) repeat center center;
+  /*Blue:*/
+  /*background: url(../images/noiseHeader.png) repeat center center;*/
+  /*Grey:*/
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
 }
 /* ------------------------- CONTAINERS STYLES  -----------------------*/
 .headContainer {
   padding-top: 20px;
-  background-color: #041c47;
-  /*background-color:#111314;*/
+  /*Blue:*/
+  /*background-color: #041c47;*/
+  /*Grey:*/
+  background-color:#111314;
 }
 
 .buscarContainer{
@@ -120,10 +125,15 @@ color: #04b6d1;
   position: absolute;
   top: 0px;
   right: 0px;
+  /*Blue:*/
+  /*
   background: url(../images/noiseHeader.png) repeat center center;
   background-color: #041c47;
+  */
+  /*Grey:*/
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
   border-radius: 10px 10px 10px 500px;
-  /*border-radius: 500px;*/
   z-index: 9;
 }
 
@@ -132,9 +142,15 @@ color: #04b6d1;
   height: 250px;
   position: absolute;
   top: 0px;
-  right: -20px;
+  right: -15px;
+  /*Blue:*/
+  /*
   background: url(../images/noiseHeader.png) repeat center center;
   background-color: #041c47;
+  */
+  /*Grey:*/
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
   border-radius: 10px 10px 10px 500px;
   /*border-radius: 500px;*/
   z-index: 9;
