@@ -52,15 +52,15 @@
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 iconsContainer">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-user lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
                     <span>Username</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-cog lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
                     <span>Configuracion</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
                 </div>
@@ -71,17 +71,84 @@
               <div class="circle visible-lg visible-md">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logoContainer text-center visible-lg visible-md">
-                <img src="Resources/images/logo1.png" alt="...">
+                <img src="Resources/images/logo1.png" alt="..." class="logo">
               </div>
               <!-- Fin logo y circulo-->
+            </div>
+          </div>
 
+
+        </div>
+        <!-- Fin Barra Usuario-->
+        <!-- Categoria -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#111314;">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer" style="background:url(Resources/images/carouselProgramacion.png)">
+            </div>
+            <div class="textoCategoriaContainer headerNoise">
+              <p>Programacion &nbsp;</p>
             </div>
           </div>
         </div>
-        <!-- Fin Barra Usuario-->
-
+        <!-- Fin Categoria -->
+        <!-- Separador -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator">
+        </div>
+        <!-- Fin Separador -->
         <!-- CONTENIDO -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <!-- Izquierda -->
+              <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                  <!-- Pregunta -->
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 preguntaContainer pull-right">
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p> Centrar elementos en un div? </p>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                        <span class="glyphicon glyphicon-user iconosPregunta"></span>
+                        <span> Username </span>
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <p> PREGUNTA AQUI </p>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                        <p> Face </p>
+                        <p> Puntos </p>
+                        <p> Caca </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Fin Pregunta -->
+                  <!-- Mejor respuesta -->
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contenidoContainer">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mejorRespuestaContainer pull-right">
+                      dasd
+                    </div>
+                  </div>
+                  <!-- Fin Mejor respuesta -->
+                  <!-- respuestas -->
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contenidoContainer">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 respuestasContainer pull-right">
+                      dasd
+                    </div>
+                  </div>
+                  <!-- Fin respuestas -->
+              </div>
+              <!-- Fin izquierda -->
+              <!-- Derecha -->
+              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 text-center">
+                <p class="texthtGray">algo</p>
+              </div>
+              <!-- Fin Derecha -->
+            </div>
         </div>
         <!-- Fin Contenido-->
 

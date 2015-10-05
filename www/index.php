@@ -52,15 +52,15 @@
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 indexIconsContainer">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-user lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
                     <span>Username</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-cog lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
                     <span>Configuracion</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
                 </div>
@@ -205,11 +205,11 @@
 
                   <!-- Controls -->
                   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-chevron-left textBlue" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
                   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-chevron-right textBlue" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
                 </div>

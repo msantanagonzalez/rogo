@@ -8,11 +8,17 @@ body {
     color: #fefefe;
 }
 /* ------------------------- TEXT STYLES -----------------------*/
-.lightBlue{
+.textBlue{
 color: #04b6d1;
 }
-.lightGreen{
+.textGreen{
 color: #4ac143;
+}
+.textGray{
+color: #111314
+}
+.textBlack{
+  color: #000;
 }
 /* ------------------------- Textures  -----------------------*/
 
@@ -67,6 +73,7 @@ color: #4ac143;
 
 .logoContainer {
   position: absolute;
+  padding: 0;
   top: 0;
   right: 0;
   text-align: right;
@@ -116,7 +123,61 @@ color: #4ac143;
 .TituloCategoria h1{
   color: #000
 }
+
+.categoriaContainer{
+  max-width: 100%;
+  height: 150px;
+  left: -2px;
+  top: -2px;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.textoCategoriaContainer{
+  position: absolute;
+  margin-top: 40px;
+  padding-left: 80px;
+  background-color:#111314;
+  /*background-color:#000;*/
+  font-size: 3em;
+  color: #4ac143;
+  text-shadow: 2px 1px 5px #4ac143;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.contenidoContainer{
+  margin: 0;
+  padding: 0;
+}
+
+.preguntaContainer{
+  margin-top: 20px;
+  background-color: #4ac143;
+  border-radius:10px;
+  border: 2px solid #000;
+}
+
+.mejorRespuestaContainer{
+  margin-top: 5px;
+  background-color: #151718;
+  border-radius:10px;
+  border: 2px solid #000;
+}
+
+.respuestasContainer{
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius:10px;
+  border: 2px solid #000;
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
+.logo{
+  max-width:30%;
+}
+
 .separator{
   height: 5px;
   background-color: black;
@@ -141,8 +202,8 @@ color: #4ac143;
 }
 
 .circle{
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   top: 0px;
   right: -15px;
@@ -159,6 +220,24 @@ color: #4ac143;
   z-index: 9;
 }
 
+.btnCarousel{
+  color: #fff;
+  background-color: #04b6d1;
+  border-color: #04b6d1;
+}
+
+.btnCarousel:hover{
+  color: #000;
+  background-color:#4ac143;
+  border-color: #4ac143;
+}
+
+.iconosPregunta{
+  color: #fff;
+  size:50px;
+}
+
+/*------------------- Modificaciones sobre clases boostrap ---------------------*/
 .carousel-indicators .active {
   width: 12px;
   height: 12px;
@@ -210,18 +289,6 @@ color: #4ac143;
   top:80%;
   left: 55%;
   z-index: 10;
-}
-
-.btnCarousel{
-  color: #fff;
-  background-color: #04b6d1;
-  border-color: #04b6d1;
-}
-
-.btnCarousel:hover{
-  color: #000;
-  background-color:#4ac143;
-  border-color: #4ac143;
 }
 
 .btn-default {
