@@ -173,6 +173,12 @@ color: #111314
   border-radius:10px;
   border: 2px solid #000;
 }
+.historial{
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius:10px;
+  border: 2px solid #000;
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .logo{
   max-width:30%;
