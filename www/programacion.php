@@ -16,6 +16,8 @@
   	<link href="Resources/css/bootstrap.css" rel="stylesheet">
     <!-- CSS(Ours) -->
     <link href="Resources/css/styles.css" rel="stylesheet">
+    <link href="Resources/css/customFonts.css" rel="stylesheet">
+    
   	<title>Rogo |- Ask and respond </title>
   </head>
 

@@ -16,6 +16,8 @@
   	<link href="Resources/css/bootstrap.css" rel="stylesheet">
     <!-- CSS(Ours) -->
     <link href="Resources/css/styles.css" rel="stylesheet">
+    <link href="Resources/css/customFonts.css" rel="stylesheet">
+
   	<title>Rogo |- Ask and respond </title>
   </head>
 
@@ -60,7 +62,7 @@
                     <span>Configuracion</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
+                    <span class="icon-exit textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
                 </div>
@@ -169,7 +171,7 @@
                       <img class="carouselImageContainer" src="Resources/images/carouselCiencia.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Ciencia</h1>
-                        <p>Pregunta2</p>
+                        <p>Que es la teoría de cuerdas?</p>
                         <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
@@ -178,7 +180,7 @@
                       <img class="carouselImageContainer" src="Resources/images/carouselDeporte.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Deporte</h1>
-                        <p>Pregunta3</p>
+                        <p>Posiciones en el fútbol americano?</p>
                         <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
@@ -187,7 +189,7 @@
                       <img class="carouselImageContainer" src="Resources/images/carouselArte.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Arte</h1>
-                        <p>Pregunta4</p>
+                        <p>Que es un fractal?</p>
                         <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
@@ -196,7 +198,7 @@
                       <img class="carouselImageContainer" src="Resources/images/carouselTecnologia.png" alt="...">
                       <div class="carousel-caption">
                         <h1>Tecnologia</h1>
-                        <p>Pregunta5</p>
+                        <p>Que significa "Dual core" y "Quad core"?</p>
                         <a class="btn btn-lg btnCarousel" href="#news1" role="button">Responder &raquo;</a>
                       </div>
                     </div>
@@ -229,29 +231,86 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
           <!-- Principio Ordenacion Categoria -->
-          <div class="IndexCategoria col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <a href="ciencia.php" class="list-group-item ">Ciencia</a>
-            <a href="tecnologia.php" class="list-group-item ">Tecnologia</a>
-            <a href="deporte.php" class="list-group-item ">Deporte</a>
-            <a href="arte.php" class="list-group-item ">Arte</a>
-            <a href="programacion.php" class="list-group-item ">Programacion</a>
+          <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <a href="programacion.php" class="list-group-item"><span class="icon-consoleIcon menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+            <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
+            <a href="deporte.php" class="list-group-item "><span class="icon-soccerIcon2 menuIconosCategoria"></span>Deporte</a>
+            <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
+            <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
           </div>
           <!-- Fin Ordenacion Categoria -->
 
           <!-- Principio Historial -->
-
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 historialContainer pull-right">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 historialContainer">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h3 class="indexFecha">10 de Octubre del 2015</h3>
+                <!-- Programacion -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-consoleIcon indexIconosCategoria"></span>Programacion</h1>
                   <BR>
-                    <BR>
-                      <BR>
-                        <BR>
-                          <BR>
-                            <BR>
-
+                  <BR>
+                  <BR>
+                </div>
+                <!-- Ciencia -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span>Ciencia</h1>
+                  <BR>
+                  <BR>
+                  <BR>
+                </div>
+                <!-- Deporte -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-soccerIcon2 indexIconosCategoria"></span>Deporte</h1>
+                  <BR>
+                  <BR>
+                  <BR>
+                </div>
+                <!-- Arte -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span>Arte</h1>
+                  <BR>
+                  <BR>
+                  <BR>
+                </div>
+                <!-- Tecnologia -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span>Tecnologia</h1>
+                  <BR>
+                  <BR>
+                  <BR>
+                </div>
               </div>
-
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h3 class="indexFecha">09/10/2015</h3>
+                <!-- Programacion -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
+                  <h1 class="indexCategoria"><span class="icon-embed indexIconosCategoria"></span>Programacion</h1>
+                  <h1 class="indexCategoria"><span class="icon-embed2 indexIconosCategoria"></span>Programacion</h1>
+                  <h1 class="indexCategoria"><span class="icon-codeIcon1 indexIconosCategoria"></span>Programacion</h1>
+                  <h1 class="indexCategoria"><span class="icon-codeIcon2 indexIconosCategoria"></span>Programacion</h1>
+                  <BR>
+                  <BR>
+                  <h1 class="indexCategoria"><span class="icon-atomCircleIcon indexIconosCategoria"></span>Ciencia</h1>
+                  <BR>
+                  <BR>
+                  <h1 class="indexCategoria"><span class="icon-soccerIcon1 indexIconosCategoria"></span>Deporte</h1>
+                  <h1 class="indexCategoria"><span class="icon-trophyIcon1 indexIconosCategoria"></span>Deporte</h1>
+                  <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
+                </div>
+                <BR>
+                <BR>
+                <BR>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <h3 class="indexFecha">Jueves 08/10/2015</h3>
+                <BR>
+                <BR>
+                <BR>
+              </div>
             </div>
 
+            </div>
             <!-- Fin Historial -->
         </div>
         <!-- Fin del Cuerpo de la pagina-->

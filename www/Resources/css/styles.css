@@ -7,6 +7,10 @@ body {
     background-color: #d3d3d3;
     color: #fefefe;
 }
+h1,h2,h3{
+  color: #111314;
+}
+
 /* ------------------------- TEXT STYLES -----------------------*/
 .textBlue{
 color: #04b6d1;
@@ -20,12 +24,44 @@ color: #111314
 .textBlack{
   color: #000;
 }
-/* ------------------------- Textures  -----------------------*/
+.indexFecha{
+  font-weight: bold;
+  text-decoration:underline;
+}
+.indexCategoria{
+  -webkit-text-stroke: 1px black;
+  color: #4ac143;
+  text-shadow: 2px 1px 0px #000;
+  /*
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  */
+}
+.textoCategoria{
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 25%;
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+  color: #4ac143;
+  /*
+  background-color:#041c47;
+  color: #fff;
+  */
+  font-size: 3em;
+  text-shadow: 2px 1px 0px #000;
+  border-radius: 0px 100px 0px 0px;
+}
 
+/* ------------------------- Textures  -----------------------*/
 .bodyNoise{
   background: url(../images/noiseBody.png) repeat center center;
 }
-
 .headerNoise{
   /*Blue:*/
   /*background: url(../images/noiseHeader.png) repeat center center;*/
@@ -40,37 +76,31 @@ color: #111314
   /*Grey:*/
   background-color:#111314;
 }
-
 .buscarContainer{
   padding-bottom: 10px;
 }
-
 .indexIconsContainer{
   text-align: center;
   padding-top: 80px;
   padding-left: 50px;
   padding-right: 50px;
 }
-
 .iconsContainer{
   text-align: center;
   padding-top: 15px;
   padding-left: 0px;
   padding-right: 0px;
 }
-
 .singleIconContainer{
   padding-left: 0;
   padding-right: 0;
 }
-
 .indexLogoContainer {
   position: absolute;
   top: 10%; /*Before: 50% */
   right: 0;
   z-index: 10;
 }
-
 .logoContainer {
   position: absolute;
   padding: 0;
@@ -79,12 +109,10 @@ color: #111314
   text-align: right;
   z-index: 10;
 }
-
 .registroContainer{
   padding-top: 20px;
   text-align: center;
 }
-
 .carouselContainer{
   padding-left:5px;
   padding-right:5px;
@@ -93,7 +121,6 @@ color: #111314
   background-color:#111314;
   border-radius:10px;
 }
-
 .carouselImageContainer{
   width: 1024px;
   max-height: 500px;
@@ -103,67 +130,58 @@ color: #111314
   -ms-filter: blur(2px);
   filter: blur(2px);
 }
-
-.IndexCategoria{
+.indexCategoriaContainer{
     padding-top:10px;
-
 }
 
 .list-group-item{
   background-color: #041c47;
 }
-.IndexCategoria a{
-  color: #FFF
-}
-.TituloCategoria{
-  text-align: center;
-}
-.TituloCategoria h1{
-  color: #000
-}
-
 .contenidoContainer{
   margin: 0;
   padding: 0;
 }
-
 .preguntaContainer{
   margin-top: 20px;
   background-color: #4ac143;
   border-radius:10px;
   border: 2px solid #000;
 }
-
 .mejorRespuestaContainer{
   margin-top: 5px;
   background-color: #151718;
   border-radius:10px;
   border: 2px solid #000;
 }
-
 .respuestasContainer{
   margin-top: 5px;
   background-color: #fff;
   border-radius:10px;
   border: 2px solid #000;
 }
-
 .historialContainer{
   margin-top: 20px;
+  /*
   background-color: #fff;
   border-radius:10px;
   border: 2px solid #000;
+  */
 }
+.categoriaContainer{
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+  height: 150px;
+  overflow: hidden;
+}
+
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .logo{
   max-width:30%;
 }
-
 .separator{
   height: 5px;
   background-color: black;
 }
-
 .indexCircle{
   width: 250px; /*before:250*/
   height: 250px;
@@ -181,7 +199,6 @@ color: #111314
   border-radius: 10px 10px 10px 500px;
   z-index: 9;
 }
-
 .circle{
   width: 150px;
   height: 150px;
@@ -200,73 +217,56 @@ color: #111314
   /*border-radius: 500px;*/
   z-index: 9;
 }
-
-.categoriaContainer{
-  background: url(../images/noiseHeaderGrey.png) repeat center center;
-  background-color:#111314;
-  height: 150px;
-  overflow: hidden;
+.indexCategoriaContainer a{
+  color: #FFF
 }
-
 .imagenCategoria{
   min-width: 100%;
 }
-
 #imagenArte{
   margin-top: -380px; /*Centrar imagen*/
 }
-
 #imagenCiencia{
   margin-top: -130px; /*Centrar imagen*/
 }
-
 #imagenDeporte{
   margin-top: -450px; /*Centrar imagen*/
 }
-
 #imagenProgramacion{
   margin-top: -200px; /*Centrar imagen*/
 }
-
 #imagenTecnologia{
   margin-top: -400px; /*Centrar imagen*/
 }
-
-.textoCategoria{
-  position: absolute;
-  bottom: -10px;
-  left: -5px;
-  width: 25%;
-  background: url(../images/noiseHeaderGrey.png) repeat center center;
-  background-color:#111314;
-  color: #4ac143;
-
-  /*
-  background-color:#041c47;
-  color: #fff;
-  */
-  font-size: 3em;
-  text-shadow: 2px 1px 5px #4ac143;
-  border-radius: 0px 100px 0px 0px;
-}
-
 .btnCarousel{
   color: #fff;
   background-color: #04b6d1;
   border-color: #04b6d1;
 }
-
 .btnCarousel:hover{
   color: #000;
   background-color:#4ac143;
   border-color: #4ac143;
 }
-
 .iconosPregunta{
   color: #fff;
   size:50px;
 }
-
+.menuIconosCategoria{
+  padding-right: 20px;
+  color: #04b6d1;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px 0px #000;
+}
+.indexIconosCategoria{
+  padding-right: 20px;
+  padding-left: 20px; /*Quitar*/
+  color: #111314;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 0px #000;
+}
 /*------------------- Modificaciones sobre clases boostrap ---------------------*/
 .carousel-indicators .active {
   width: 12px;
@@ -287,16 +287,16 @@ color: #111314
   padding-left:5%;
   padding-top:0px;
   padding-bottom:0px;
-  color: #4ac143;
   text-align: left;
   /*text-shadow: 2px 1px 2px #000;*/
-  text-shadow: 2px 1px 2px #000;
+  text-shadow: 2px 1px 0px #000;
 }
 
 .carousel-caption h1{
   /*background: url(../images/noiseHeaderGrey.png) repeat center center;*/
   /*background-color:#111314;*/
   /*border-radius: 10px 0px 0px 10px;*/
+  color: #4ac143;
   font-size: 3em;
 }
 
