@@ -86,7 +86,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer" style="background:url(Resources/images/carouselTecnologia.png)">
             </div>
             <div class="textoCategoriaContainer headerNoise">
-              <p>Programacion &nbsp;</p>
+              <p>Tecnologia &nbsp;</p>
             </div>
           </div>
         </div>
