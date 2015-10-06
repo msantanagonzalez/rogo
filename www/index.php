@@ -239,36 +239,19 @@
           <!-- Fin Ordenacion Categoria -->
 
           <!-- Principio Historial -->
-          <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-          <BR>
-          <BR>
-          <BR>
-          <BR>
-            <BR>
-            <BR>
-            <BR>
-            <BR>
-              <BR>
-              <BR>
-              <BR>
-              <BR>
-                <BR>
-                <BR>
-                <BR>
-                <BR>
-                  <BR>
-                  <BR>
-                  <BR>
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 preguntaContainer pull-right">
                   <BR>
                     <BR>
-                    <BR>
-                    <BR>
-                    <BR>
                       <BR>
-                      <BR>
-                      <BR>
-                      <BR>
+                        <BR>
+                          <BR>
+                            <BR>
+
+              </div>
+
             </div>
+
             <!-- Fin Historial -->
         </div>
         <!-- Fin del Cuerpo de la pagina-->

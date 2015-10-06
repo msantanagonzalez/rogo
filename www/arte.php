@@ -71,7 +71,7 @@
               <div class="circle visible-lg visible-md">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 logoContainer text-center visible-lg visible-md">
-                <img src="Resources/images/logo1.png" alt="...">
+                <img src="Resources/images/logo1.png" alt="..." class="logo">
               </div>
               <!-- Fin logo y circulo-->
 
@@ -81,7 +81,14 @@
         <!-- Fin Barra Usuario-->
 
         <!-- CONTENIDO -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#111314;">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer" style="background:url(Resources/images/carouselArte.png)">
+            </div>
+            <div class="textoCategoriaContainer headerNoise">
+              <p>Arte &nbsp;</p>
+            </div>
+          </div>
         </div>
         <!-- Fin Contenido-->
 
