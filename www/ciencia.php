@@ -52,15 +52,15 @@
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 iconsContainer">
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-user lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
                     <span>Username</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-cog lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
                     <span>Configuracion</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off lightBlue" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
                 </div>
@@ -81,14 +81,18 @@
         <!-- Fin Barra Usuario-->
 
         <!-- CONTENIDO -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#111314;">
+        <!-- Categoria -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer" style="background:url(Resources/images/carouselCiencia.png)">
-            </div>
-            <div class="textoCategoriaContainer headerNoise">
-              <p>Ciencia &nbsp;</p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer">
+              <img id="imagenCiencia" src="Resources/images/carouselCiencia.png" alt="..." class="imagenCategoria">
+              <p class="textoCategoria text-center">Ciencia &nbsp;</p>
             </div>
           </div>
+        </div>
+        <!-- Fin Categoria -->
+        <!-- Separador -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator">
         </div>
         <!-- Fin Contenido-->
 

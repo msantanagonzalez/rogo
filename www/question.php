@@ -81,12 +81,11 @@
         </div>
         <!-- Fin Barra Usuario-->
         <!-- Categoria -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#111314;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer" style="background:url(Resources/images/carouselProgramacion.png)">
-            </div>
-            <div class="textoCategoriaContainer headerNoise">
-              <p>Programacion &nbsp;</p>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer">
+              <img id="imagenProgramacion" src="Resources/images/carouselProgramacion.png" class="imagenCategoria">
+              <p class="textoCategoria text-center">Programacion &nbsp;</p>
             </div>
           </div>
         </div>

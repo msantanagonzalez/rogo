@@ -111,41 +111,15 @@ color: #111314
 
 .list-group-item{
   background-color: #041c47;
-
 }
 .IndexCategoria a{
   color: #FFF
-
 }
 .TituloCategoria{
   text-align: center;
 }
 .TituloCategoria h1{
   color: #000
-}
-
-.categoriaContainer{
-  max-width: 100%;
-  height: 150px;
-  left: -2px;
-  top: -2px;
-  -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
-  filter: blur(1px);
-}
-
-.textoCategoriaContainer{
-  position: absolute;
-  margin-top: 40px;
-  padding-left: 80px;
-  background-color:#111314;
-  /*background-color:#000;*/
-  font-size: 3em;
-  color: #4ac143;
-  text-shadow: 2px 1px 5px #4ac143;
-  border-radius: 0px 10px 10px 0px;
 }
 
 .contenidoContainer{
@@ -173,7 +147,8 @@ color: #111314
   border-radius:10px;
   border: 2px solid #000;
 }
-.historial{
+
+.historialContainer{
   margin-top: 20px;
   background-color: #fff;
   border-radius:10px;
@@ -226,6 +201,55 @@ color: #111314
   z-index: 9;
 }
 
+.categoriaContainer{
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+  height: 150px;
+  overflow: hidden;
+}
+
+.imagenCategoria{
+  min-width: 100%;
+}
+
+#imagenArte{
+  margin-top: -380px; /*Centrar imagen*/
+}
+
+#imagenCiencia{
+  margin-top: -130px; /*Centrar imagen*/
+}
+
+#imagenDeporte{
+  margin-top: -450px; /*Centrar imagen*/
+}
+
+#imagenProgramacion{
+  margin-top: -200px; /*Centrar imagen*/
+}
+
+#imagenTecnologia{
+  margin-top: -400px; /*Centrar imagen*/
+}
+
+.textoCategoria{
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 25%;
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+  color: #4ac143;
+
+  /*
+  background-color:#041c47;
+  color: #fff;
+  */
+  font-size: 3em;
+  text-shadow: 2px 1px 5px #4ac143;
+  border-radius: 0px 100px 0px 0px;
+}
+
 .btnCarousel{
   color: #fff;
   background-color: #04b6d1;
@@ -266,12 +290,13 @@ color: #111314
   color: #4ac143;
   text-align: left;
   /*text-shadow: 2px 1px 2px #000;*/
-  text-shadow: 2px 1px 5px #4ac143;
+  text-shadow: 2px 1px 2px #000;
 }
 
 .carousel-caption h1{
-  background-color:#111314;
-  border-radius:5px;
+  /*background: url(../images/noiseHeaderGrey.png) repeat center center;*/
+  /*background-color:#111314;*/
+  /*border-radius: 10px 0px 0px 10px;*/
   font-size: 3em;
 }
 
