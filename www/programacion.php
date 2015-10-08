@@ -17,7 +17,7 @@
     <!-- CSS(Ours) -->
     <link href="Resources/css/styles.css" rel="stylesheet">
     <link href="Resources/css/customFonts.css" rel="stylesheet">
-    
+
   	<title>Rogo |- Ask and respond </title>
   </head>
 
@@ -88,7 +88,7 @@
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer">
               <img id="imagenProgramacion" src="Resources/images/carouselProgramacion.png" class="imagenCategoria">
-              <p class="textoCategoria text-center">Programacion &nbsp;</p>
+              <p class="textoCategoria text-center">Programacion <span class="icon-terminal iconosCategoria" aria-hidden="true"></span></p>
             </div>
           </div>
         </div>

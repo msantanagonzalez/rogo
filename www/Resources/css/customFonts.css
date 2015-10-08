@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?ip2beu');
-	src:url('../fonts/icomoon.eot?ip2beu#iefix') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?ip2beu') format('truetype'),
-		url('../fonts/icomoon.woff?ip2beu') format('woff'),
-		url('../fonts/icomoon.svg?ip2beu#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?cwfawl');
+	src:url('../fonts/icomoon.eot?cwfawl#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?cwfawl') format('truetype'),
+		url('../fonts/icomoon.woff?cwfawl') format('woff'),
+		url('../fonts/icomoon.svg?cwfawl#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,24 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ogo2Icon:before {
+	content: "\e82a";
+}
+.icon-ogo2Icon2:before {
+	content: "\e82b";
+}
+.icon-ogoIcon1:before {
+	content: "\e826";
+}
+.icon-ogoIcon2:before {
+	content: "\e827";
+}
+.icon-rIcon1:before {
+	content: "\e828";
+}
+.icon-rIcon2:before {
+	content: "\e829";
+}
 .icon-pencil2:before {
 	content: "\e800";
 }

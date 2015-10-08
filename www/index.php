@@ -73,7 +73,8 @@
               <div class="indexCircle visible-lg visible-md">
               </div>
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 indexLogoContainer text-right visible-lg visible-md">
-                <img src="Resources/images/logo1.png" alt="...">
+                <span class="icon-rIcon1 indexLogo_R" aria-hidden="true"></span>
+                <span class="icon-ogo2Icon indexLogo_Ogo" aria-hidden="true"></span>
               </div>
               <!-- Fin Logo-->
 
@@ -232,9 +233,9 @@
 
           <!-- Principio Ordenacion Categoria -->
           <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-3 col-xs-3">
-            <a href="programacion.php" class="list-group-item"><span class="icon-consoleIcon menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+            <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
             <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
-            <a href="deporte.php" class="list-group-item "><span class="icon-soccerIcon2 menuIconosCategoria"></span>Deporte</a>
+            <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
             <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
             <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
           </div>
@@ -246,7 +247,7 @@
                 <h3 class="indexFecha">10 de Octubre del 2015</h3>
                 <!-- Programacion -->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-consoleIcon indexIconosCategoria"></span>Programacion</h1>
+                  <h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
                   <BR>
                   <BR>
                   <BR>
@@ -260,7 +261,7 @@
                 </div>
                 <!-- Deporte -->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-soccerIcon2 indexIconosCategoria"></span>Deporte</h1>
+                  <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
                   <BR>
                   <BR>
                   <BR>
@@ -282,25 +283,6 @@
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <h3 class="indexFecha">09/10/2015</h3>
-                <!-- Programacion -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
-                  <h1 class="indexCategoria"><span class="icon-embed indexIconosCategoria"></span>Programacion</h1>
-                  <h1 class="indexCategoria"><span class="icon-embed2 indexIconosCategoria"></span>Programacion</h1>
-                  <h1 class="indexCategoria"><span class="icon-codeIcon1 indexIconosCategoria"></span>Programacion</h1>
-                  <h1 class="indexCategoria"><span class="icon-codeIcon2 indexIconosCategoria"></span>Programacion</h1>
-                  <BR>
-                  <BR>
-                  <h1 class="indexCategoria"><span class="icon-atomCircleIcon indexIconosCategoria"></span>Ciencia</h1>
-                  <BR>
-                  <BR>
-                  <h1 class="indexCategoria"><span class="icon-soccerIcon1 indexIconosCategoria"></span>Deporte</h1>
-                  <h1 class="indexCategoria"><span class="icon-trophyIcon1 indexIconosCategoria"></span>Deporte</h1>
-                  <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
-                </div>
-                <BR>
-                <BR>
-                <BR>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                 <h3 class="indexFecha">Jueves 08/10/2015</h3>
