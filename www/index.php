@@ -232,7 +232,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
           <!-- Principio Ordenacion Categoria -->
-          <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-12 col-xs-12">
             <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
             <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
             <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
@@ -248,6 +248,13 @@
                 <!-- Programacion -->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                   <h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
+                  <!-- PreguntasIndex -->
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+                    <h1 class="indexPregunta">Centrar elemento en un div?</h1>
+                    <p class="indexTextoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p class="indexCodigoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <p class="indexTextoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                  </div>
                   <BR>
                   <BR>
                   <BR>

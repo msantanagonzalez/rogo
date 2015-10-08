@@ -57,7 +57,22 @@ color: #111314;
   text-shadow: 2px 1px 0px #000;
   border-radius: 0px 100px 0px 0px;
 }
-
+.indexPregunta{
+  padding-top: 10px;
+  font-size: 24px;
+  color: #041c47;
+  text-decoration: overline;
+}
+.indexTextoPregunta{
+  max-width: 500px;
+  color: #111314;
+}
+.indexCodigoPregunta{
+  margin-left: 10px;
+  max-width: 200px;
+  background-color: #c8c8c8;
+  color: #111314;
+}
 /* ------------------------- Textures  -----------------------*/
 .bodyNoise{
   background: url(../images/noiseBody.png) repeat center center;
