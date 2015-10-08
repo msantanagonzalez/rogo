@@ -17,7 +17,7 @@
     <!-- CSS(Ours) -->
     <link href="Resources/css/styles.css" rel="stylesheet">
     <link href="Resources/css/customFonts.css" rel="stylesheet">
-    
+
   	<title>Rogo |- Ask and respond </title>
   </head>
 
@@ -62,7 +62,7 @@
                     <span>Configuracion</span>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
+                    <span class="icon-exit textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
                 </div>
@@ -88,7 +88,7 @@
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 categoriaContainer">
               <img id="imagenArte" src="Resources/images/carouselArte.png" alt="..." class="imagenCategoria">
-              <p class="textoCategoria text-center">Arte &nbsp;</p>
+              <p class="textoCategoria text-center">Arte &nbsp;<span class="icon-paletteIcon1 iconosCategoria" aria-hidden="true"></p>
             </div>
           </div>
         </div>
