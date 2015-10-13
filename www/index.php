@@ -25,20 +25,15 @@
   <body class="bodyNoise">
     <div class="container-fluid">
      <div class="row">
-
         <!--  Inicio Barra de herramientas,Carrusel y login -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 headContainer headerNoise">
-
           <!-- BUSCAR,LOGO Y BARRA DE HERRAMIENTAS -->
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="row">
-
               <!-- LOGO -->
               <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center visible-sm visible-xs">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
               <!-- Fin Logo-->
-
               <!-- BUSCAR -->
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="input-group">
@@ -49,7 +44,6 @@
                 </div>
               </div>
               <!-- Fin Buscar-->
-
               <!-- USUARIO -->
               <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 indexIconsContainer">
                 <div class="row">
@@ -68,7 +62,6 @@
                 </div>
               </div>
               <!-- Fin Usuario-->
-
               <!-- LOGO -->
               <div class="indexCircle visible-lg visible-md">
               </div>
@@ -77,8 +70,6 @@
                 <span class="icon-ogo2Icon indexLogo_Ogo" aria-hidden="true"></span>
               </div>
               <!-- Fin Logo-->
-
-            </div>
           </div>
           <!-- Fin Barra de herramientas y logo-->
 
@@ -230,81 +221,85 @@
 
         <!-- CONTENIDO -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-          <!-- Principio Ordenacion Categoria -->
-          <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-12 col-xs-12">
-            <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
-            <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
-            <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
-            <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
-            <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
-          </div>
-          <!-- Fin Ordenacion Categoria -->
-
-          <!-- Principio Historial -->
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 historialContainer">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <h3 class="indexFecha">10 de Octubre del 2015</h3>
-                <!-- Programacion -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
-                  <!-- PreguntasIndex -->
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
-                    <h1 class="indexPregunta">Centrar elemento en un div?</h1>
-                    <p class="indexTextoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p class="indexCodigoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-                    <p class="indexTextoPregunta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="row">
+            <!-- Principio Ordenacion Categoria -->
+            <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+              <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
+              <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
+              <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
+              <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
+            </div>
+            <!-- Fin Ordenacion Categoria -->
+            <!-- Principio Historial -->
+              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+      				  <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h3 class="indexFecha">09/10/2015</h3>
+                    <div class="row">
+                      <!-- Programacion -->
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      	<h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
+                      	<!-- PreguntasProgramacion -->
+                      	<div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-12 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 indexPregunta">
+                        		  <p>Centrar elemento en un div?</p>
+                        		</div>
+                        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        		  <p class="indexTextoPregunta">Estoy utilizando boostrap y tengo en mi codigo las siguientes lineas:</p>
+                              <pre class="indexCodigoPregunta"><code>&lt;div class=&quot;row&quot;&gt;<br>&#32;&lt;div class=&quot;span7 offset5&quot;&gt;box&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                        		  <p class="indexTextoPregunta">Intente cambiando los valores del span y offset y por alguna razon el texto no aparece centrado, alguien sabe cual puede ser el error?.</p>
+                        		</div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Usuario
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">+34</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+                        <!-- Fin PreguntasProgramacion-->
+                      </div>
+                      <!-- Ciencia -->
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span>Ciencia</h1>
+                      </div>
+                      <!-- Deporte -->
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
+                      </div>
+                      <!-- Arte -->
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span>Arte</h1>
+                      </div>
+                      <!-- Tecnologia -->
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span>Tecnologia</h1>
+                      </div>
+                    </div>
+                    <!-- Fin Row -->
                   </div>
-                  <BR>
-                  <BR>
-                  <BR>
-                </div>
-                <!-- Ciencia -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span>Ciencia</h1>
-                  <BR>
-                  <BR>
-                  <BR>
-                </div>
-                <!-- Deporte -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
-                  <BR>
-                  <BR>
-                  <BR>
-                </div>
-                <!-- Arte -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span>Arte</h1>
-                  <BR>
-                  <BR>
-                  <BR>
-                </div>
-                <!-- Tecnologia -->
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                  <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span>Tecnologia</h1>
-                  <BR>
-                  <BR>
-                  <BR>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <h3 class="indexFecha">09/10/2015</h3>
-              </div>
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-                <h3 class="indexFecha">Jueves 08/10/2015</h3>
-                <BR>
-                <BR>
-                <BR>
-              </div>
-            </div>
-
-            </div>
-            <!-- Fin Historial -->
+      				  </div>
+                <!-- Fin Row -->
+			        </div>
+              <!-- Fin Historial -->
+           </div>
+           <!-- Fin Row -->
         </div>
-        <!-- Fin del Cuerpo de la pagina-->
+		<!-- Fin CONTENIDO-->
       </div>
+      <!-- Fin row-->
     </div>
+     <!-- Fin container-fluid-->
   </body>
   <!-- Principio del Cuerpo de la pagina-->
 
