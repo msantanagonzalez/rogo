@@ -29,57 +29,7 @@ color: #111314;
   text-decoration:underline;
 }
 .indexCategoria{
-  /*-webkit-text-stroke: 1px black;*/
   color: #4ac143;
-  /*text-shadow: 2px 1px 0px #000;*/
-  /*
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-  */
-}
-.textoCategoria{
-  position: absolute;
-  bottom: -10px;
-  left: -5px;
-  width: 40%;
-  background: url(../images/noiseHeaderGrey.png) repeat center center;
-  background-color:#111314;
-  color: #fff;
-  /*
-  background-color:#041c47;
-  color: #fff;
-  */
-  font-size: 3em;
-  text-shadow: 2px 1px 0px #000;
-  border-radius: 0px 100px 0px 0px;
-}
-.indexPregunta{
-  text-align: left;
-  font-size: 24px;
-  color: #041c47;
-  text-decoration: overline;
-}
-.indexUsuarioPregunta{
-  color: #111314;
-  font-size: 16px;
-  text-decoration: underline;
-}
-.indexVotoPregunta{
-  color: #111314;
-  font-size: 25px;
-}
-.indexPuntuacionPregunta{
-  color: #111314;
-  font-size: 30px;
-}
-.indexTextoPregunta{
-  font-size: 14px;
-  text-align: justify;
-  color: #111314;
 }
 .indexCodigoPregunta{
   text-align: justify;
@@ -87,6 +37,56 @@ color: #111314;
   margin-left: 10px;
   background-color: #c8c8c8;
   color: #111314;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px){
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width:992){
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200){
+  .textoCategoria{
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 40%;
+    background: url(../images/noiseHeaderGrey.png) repeat center center;
+    background-color:#111314;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 1px 0px #000;
+    border-radius: 0px 100px 0px 0px;
+  }
+  .indexPregunta{
+    text-align: left;
+    font-size: 24px;
+    color: #041c47;
+    text-decoration: overline;
+  }
+  .indexUsuarioPregunta{
+    color: #111314;
+    font-size: 16px;
+    text-decoration: underline;
+  }
+  .indexVotoPregunta{
+    color: #111314;
+    font-size: 20px;
+  }
+  .indexPuntuacionPregunta{
+    color: #111314;
+    font-size: 25px;
+  }
+  .indexTextoPregunta{
+    font-size: 14px;
+    text-align: justify;
+    color: #111314;
+  }
 }
 /* ------------------------- Textures  -----------------------*/
 .bodyNoise{
