@@ -41,12 +41,34 @@ color: #111314;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width:768px){
-
+  .textoCategoria{
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 40%;
+    background: url(../images/noiseHeaderGrey.png) repeat center center;
+    background-color:#111314;
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 2px 1px 0px #000;
+    border-radius: 0px 100px 0px 0px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width:992){
-
+  .textoCategoria{
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 40%;
+    background: url(../images/noiseHeaderGrey.png) repeat center center;
+    background-color:#111314;
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 2px 1px 0px #000;
+    border-radius: 0px 100px 0px 0px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -59,7 +81,7 @@ color: #111314;
     background: url(../images/noiseHeaderGrey.png) repeat center center;
     background-color:#111314;
     color: #fff;
-    font-size: 25px;
+    font-size: 50px;
     text-shadow: 2px 1px 0px #000;
     border-radius: 0px 100px 0px 0px;
   }
