@@ -310,6 +310,17 @@ a.list-group-item:hover{
   font-size: 40px;
   text-shadow: 1px 1px 0px #000;
 }
+.indexTextoCategoria{
+  max-width: 1000px;
+  color: #111314;
+}
+.indexCodigoCategoria{
+  margin-left: 10px;
+  max-width: 500px;
+  background-color: #c8c8c8;
+  color: #111314;
+}
+
 .iconosCategoria{
   padding-left: 15px; /*Quitar*/
   /*color: #04b6d1;*/

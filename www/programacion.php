@@ -96,6 +96,20 @@
         <!-- Separador -->
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator">
         </div>
+
+        <!-- Historial -->
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <!-- Preguntas -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+            <h1 class="indexPregunta">Historial</h1>
+            <p class="indexTextoCategoria">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <p class="indexCodigoCategoria">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+            <p class="indexTextoCategoria">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+          <BR>
+          <BR>
+          <BR>
+        </div>
         <!-- Fin Contenido-->
 
       </div>
