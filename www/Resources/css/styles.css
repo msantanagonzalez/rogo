@@ -38,77 +38,40 @@ color: #111314;
   background-color: #c8c8c8;
   color: #111314;
 }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width:768px){
-  .textoCategoria{
-    position: absolute;
-    bottom: -10px;
-    left: -5px;
-    width: 40%;
-    background: url(../images/noiseHeaderGrey.png) repeat center center;
-    background-color:#111314;
-    color: #fff;
-    font-size: 15px;
-    text-shadow: 2px 1px 0px #000;
-    border-radius: 0px 100px 0px 0px;
-  }
+.textoCategoria{
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+  width: 40%;
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+  color: #fff;
+  text-shadow: 2px 1px 0px #000;
+  border-radius: 0px 100px 0px 0px;
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width:992){
-  .textoCategoria{
-    position: absolute;
-    bottom: -10px;
-    left: -5px;
-    width: 40%;
-    background: url(../images/noiseHeaderGrey.png) repeat center center;
-    background-color:#111314;
-    color: #fff;
-    font-size: 25px;
-    text-shadow: 2px 1px 0px #000;
-    border-radius: 0px 100px 0px 0px;
-  }
+.indexPregunta{
+  text-align: left;
+  font-size: 24px;
+  color: #041c47;
+  text-decoration: overline;
 }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width:1200){
-  .textoCategoria{
-    position: absolute;
-    bottom: -10px;
-    left: -5px;
-    width: 40%;
-    background: url(../images/noiseHeaderGrey.png) repeat center center;
-    background-color:#111314;
-    color: #fff;
-    font-size: 50px;
-    text-shadow: 2px 1px 0px #000;
-    border-radius: 0px 100px 0px 0px;
-  }
-  .indexPregunta{
-    text-align: left;
-    font-size: 24px;
-    color: #041c47;
-    text-decoration: overline;
-  }
-  .indexUsuarioPregunta{
-    color: #111314;
-    font-size: 16px;
-    text-decoration: underline;
-  }
-  .indexVotoPregunta{
-    color: #111314;
-    font-size: 20px;
-  }
-  .indexPuntuacionPregunta{
-    color: #111314;
-    font-size: 25px;
-  }
-  .indexTextoPregunta{
-    font-size: 14px;
-    text-align: justify;
-    color: #111314;
-  }
+.indexUsuarioPregunta{
+  color: #111314;
+  font-size: 16px;
+  text-decoration: underline;
+}
+.indexVotoPregunta{
+  color: #111314;
+  font-size: 20px;
+}
+.indexPuntuacionPregunta{
+  color: #111314;
+  font-size: 25px;
+}
+.indexTextoPregunta{
+  font-size: 14px;
+  text-align: justify;
+  color: #111314;
 }
 /* ------------------------- Textures  -----------------------*/
 .bodyNoise{
@@ -430,4 +393,32 @@ a.list-group-item:hover{
     color: black;
     background-color: #bbbbbb;
     border-color: #bbbbbb;
+}
+/*--------- Media Queries(Texto responsive) -------*/
+/* Large desktop */
+@media (min-width: 1200px){
+  .textoCategoria{
+    font-size: 60px;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px){
+  .textoCategoria{
+    font-size: 30px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px){
+  .textoCategoria{
+    font-size: 20px;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px){
+  .textoCategoria{
+    font-size: 10px;
+  }
 }
