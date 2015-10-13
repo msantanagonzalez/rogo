@@ -47,15 +47,15 @@
               <!-- USUARIO -->
               <div class="col-md-5 col-xs-12 indexIconsContainer">
                 <div class="row">
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
+                  <div class="col-xs-4 singleIconContainer">
                     <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
                     <a href="user.php"><span >Username</span></a>
                   </div>
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
+                  <div class="col-xs-4 singleIconContainer">
                     <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
                     <span>Configuracion</span>
                   </div>
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
+                  <div class="col-xs-4 singleIconContainer">
                     <span class="icon-exit textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
@@ -66,8 +66,7 @@
               <div class="indexCircle visible-lg visible-md">
               </div>
               <div class="col-md-3 col-xs-12 indexLogoContainer text-right visible-lg visible-md">
-                <span class="icon-rIcon1 indexLogo_R" aria-hidden="true"></span>
-                <span class="icon-ogo2Icon indexLogo_Ogo" aria-hidden="true"></span>
+                <img src="Resources/images/logo1.png" alt="...">
               </div>
               <!-- Fin Logo-->
           </div>
