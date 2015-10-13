@@ -26,16 +26,16 @@
     <div class="container-fluid">
      <div class="row">
         <!--  Inicio Barra de herramientas,Carrusel y login -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 headContainer headerNoise">
+        <div class="col-xs-12 headContainer headerNoise">
           <!-- BUSCAR,LOGO Y BARRA DE HERRAMIENTAS -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-xs-12">
               <!-- LOGO -->
-              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 text-center visible-sm visible-xs">
+              <div class="col-md-3 col-xs-12 text-center visible-sm visible-xs">
                 <img src="Resources/images/logo1.png" alt="...">
               </div>
               <!-- Fin Logo-->
               <!-- BUSCAR -->
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="col-md-4 col-xs-12">
                 <div class="input-group">
                   <input type="text" class="form-control" placeholder="Search for...">
                   <span class="input-group-btn">
@@ -45,17 +45,17 @@
               </div>
               <!-- Fin Buscar-->
               <!-- USUARIO -->
-              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 indexIconsContainer">
+              <div class="col-md-5 col-xs-12 indexIconsContainer">
                 <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
+                  <div class="col-md-4 col-xs-12 singleIconContainer">
                     <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
                     <span>Username</span>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
+                  <div class="col-md-4 col-xs-12 singleIconContainer">
                     <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
                     <span>Configuracion</span>
                   </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
+                  <div class="col-md-4 col-xs-12 singleIconContainer">
                     <span class="icon-exit textBlue" aria-hidden="true"></span>
                     <span>Logout</span>
                   </div>
@@ -65,7 +65,7 @@
               <!-- LOGO -->
               <div class="indexCircle visible-lg visible-md">
               </div>
-              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 indexLogoContainer text-right visible-lg visible-md">
+              <div class="col-md-3 col-xs-12 indexLogoContainer text-right visible-lg visible-md">
                 <span class="icon-rIcon1 indexLogo_R" aria-hidden="true"></span>
                 <span class="icon-ogo2Icon indexLogo_Ogo" aria-hidden="true"></span>
               </div>
@@ -74,12 +74,12 @@
           <!-- Fin Barra de herramientas y logo-->
 
           <!-- REGISTRO + CAROUSEL -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-xs-12">
             <div class="row">
               <!-- LOGIN/REGISTRO -->
-              <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="col-md-3 col-xs-12">
                   <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 registroContainer">
+                    <div class="col-xs-12 registroContainer">
                       REGISTRO
                       <br>
                       <br>
@@ -111,7 +111,7 @@
                         </div>
                       </form>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 registroContainer">
+                    <div class="col-xs-12 registroContainer">
                       LOGIN
                       <br>
                       <br>
@@ -136,7 +136,7 @@
                   </div>
               </div>
               <!-- CAROUSEL -->
-              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 carouselContainer">
+              <div class="col-md-9 col-xs-12 carouselContainer">
 
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                   <!-- Indicators -->
@@ -215,15 +215,15 @@
         <!-- Fin Barra de herramientas,Carrusel y login-->
 
         <!-- SEPARADOR -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 separator">
+        <div class="col-xs-12 separator">
         </div>
         <!-- Fin Separador-->
 
         <!-- CONTENIDO -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-xs-12">
           <div class="row">
             <!-- Principio Ordenacion Categoria -->
-            <div class="indexCategoriaContainer col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <div class="indexCategoriaContainer col-md-3 col-xs-12">
               <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
               <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
               <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
@@ -232,26 +232,26 @@
             </div>
             <!-- Fin Ordenacion Categoria -->
             <!-- Principio Historial -->
-              <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+              <div class="col-md-9 col-xs-12">
       				  <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <div class="col-xs-12 text-center">
                     <h3 class="indexFecha">09/10/2015</h3>
                     <div class="row">
                       <!-- Programacion -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <div class="col-xs-12 text-center">
                       	<h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
                       	<!-- PreguntasProgramacion -->
-                      	<div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-12 col-xs-12 indexPreguntaContainer">
+                      	<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
                           <div class="row">
-                        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 indexPregunta">
+                        		<div class="col-xs-12 indexPregunta">
                         		  <p>Centrar elemento en un div?</p>
                         		</div>
-                        		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        		<div class="col-xs-12">
                         		  <p class="indexTextoPregunta">Estoy utilizando boostrap y tengo en mi codigo las siguientes lineas:</p>
                               <pre class="indexCodigoPregunta"><code>&lt;div class=&quot;row&quot;&gt;<br>&#32;&lt;div class=&quot;span7 offset5&quot;&gt;box&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
                         		  <p class="indexTextoPregunta">Intente cambiando los valores del span y offset y por alguna razon el texto no aparece centrado, alguien sabe cual puede ser el error?.</p>
                         		</div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 indexUsuarioPregunta">
+                            <div class="col-xs-12 indexUsuarioPregunta">
                               <div class="col-xs-3">
                                 <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Usuario
                               </div>
@@ -270,19 +270,19 @@
                         <!-- Fin PreguntasProgramacion-->
                       </div>
                       <!-- Ciencia -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <div class="col-xs-12 text-center">
                         <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span>Ciencia</h1>
                       </div>
                       <!-- Deporte -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <div class="col-xs-12 text-center">
                         <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
                       </div>
                       <!-- Arte -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <div class="col-xs-12 text-center">
                         <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span>Arte</h1>
                       </div>
                       <!-- Tecnologia -->
-                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                      <div class="col-xs-12 text-center">
                         <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span>Tecnologia</h1>
                       </div>
                     </div>
