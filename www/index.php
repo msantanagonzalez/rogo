@@ -49,7 +49,7 @@
                 <div class="row">
                   <div class="col-xs-4 singleIconContainer">
                     <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
-                    <a href="user.php"><span >Username</span></a>
+                    <a href="user.php"><span>Username</span></a>
                   </div>
                   <div class="col-xs-4 singleIconContainer">
                     <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
@@ -221,15 +221,6 @@
         <!-- CONTENIDO -->
         <div class="col-xs-12">
           <div class="row">
-            <!-- Principio Ordenacion Categoria -->
-            <div class="indexCategoriaContainer col-md-3 col-xs-12">
-              <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
-              <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
-              <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
-              <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
-              <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
-            </div>
-            <!-- Fin Ordenacion Categoria -->
             <!-- Principio Historial -->
               <div class="col-md-9 col-xs-12">
       				  <div class="row">
@@ -238,12 +229,12 @@
                     <div class="row">
                       <!-- Programacion -->
                       <div class="col-xs-12 text-center">
-                      	<h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span>Programacion</h1>
+                      	<h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span><a href="programacion.php">Programacion</a></h1>
                       	<!-- PreguntasProgramacion -->
                       	<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
                           <div class="row">
                         		<div class="col-xs-12 indexPregunta">
-                        		  <p>Centrar elemento en un div?</p>
+                        		  <p><a href="question.php">Centrar elemento en un div?</a></p>
                         		</div>
                         		<div class="col-xs-12">
                         		  <p class="indexTextoPregunta">Estoy utilizando boostrap y tengo en mi codigo las siguientes lineas:</p>
@@ -252,37 +243,161 @@
                         		</div>
                             <div class="col-xs-12 indexUsuarioPregunta">
                               <div class="col-xs-3">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>Usuario
                               </div>
                               <div class="col-xs-3">
-                                <span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
                               </div>
                               <div class="col-xs-3">
                                 <span class="indexPuntuacionPregunta">+34</span>
                               </div>
                               <div class="col-xs-3">
-                                <span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+
+                        <div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-xs-12 indexPregunta">
+                        		  <p><a href="#">Definir un array en php</a></p>
+                        		</div>
+                        		<div class="col-xs-12">
+                        		  <p class="indexTextoPregunta">Como se define un array en php y como acceder a los elementos que lo componen?</p>
+                        		</div>
+                            <div class="col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">+4</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
                               </div>
                         		</div>
                           </div>
                       	</div>
                         <!-- Fin PreguntasProgramacion-->
                       </div>
+
                       <!-- Ciencia -->
                       <div class="col-xs-12 text-center">
-                        <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span>Ciencia</h1>
+                        <h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span><a href="ciencia.php">Ciencia</a></h1>
+                        <!-- Preguntas ciencia -->
+                        <div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-xs-12 indexPregunta">
+                        		  <p><a href="#">Que es la teoria de cuerdas?</a></p>
+                        		</div>
+                        		<div class="col-xs-12">
+                        		  <p class="indexTextoPregunta">En fisica teorica como se define la teoria de cuerdas y sus variantes?</p>
+                        		</div>
+                            <div class="col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">+12</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+                        <!-- fin preguntas ciencia -->
                       </div>
                       <!-- Deporte -->
                       <div class="col-xs-12 text-center">
-                        <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span>Deporte</h1>
+                        <h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span><a href="deporte.php">Deporte</a></h1>
+                        <!-- Preguntas deporte -->
+                        <div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-xs-12 indexPregunta">
+                        		  <p><a href="#">Posiciones en el futbol americano?</a></p>
+                        		</div>
+                        		<div class="col-xs-12">
+                        		  <p class="indexTextoPregunta">Cuales son las posiciones del futbol americano tanto en la defensa como en la ofensiva, y que significan sus numeros?</p>
+                        		</div>
+                            <div class="col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">-2</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+                        <!-- fin pregunta deporte-->
                       </div>
                       <!-- Arte -->
                       <div class="col-xs-12 text-center">
-                        <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span>Arte</h1>
+                        <h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span><a href="arte.php">Arte</a></h1>
+                        <!-- Preguntas arte -->
+                        <div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-xs-12 indexPregunta">
+                        		  <p><a href="#">Que es un fractal?</a></p>
+                        		</div>
+                        		<div class="col-xs-12">
+                        		  <p class="indexTextoPregunta"> Como se define la estructura geometrica conocida como "Fractal"?</p>
+                        		</div>
+                            <div class="col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">+5</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+                        <!-- Fin preguntas arte -->
                       </div>
                       <!-- Tecnologia -->
                       <div class="col-xs-12 text-center">
-                        <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span>Tecnologia</h1>
+                        <h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span><a href="tecnologia.php">Tecnologia</a></h1>
+                        <!-- Preguntas tecnologia -->
+                        <div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+                          <div class="row">
+                        		<div class="col-xs-12 indexPregunta">
+                        		  <p><a href="#">Que significa "Dual core" y "Quad core"?</a></p>
+                        		</div>
+                        		<div class="col-xs-12">
+                        		  <p class="indexTextoPregunta">Que es un "Core" y cuales son las diferencias entre los principales tipos?</p>
+                        		</div>
+                            <div class="col-xs-12 indexUsuarioPregunta">
+                              <div class="col-xs-3">
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
+                              </div>
+                              <div class="col-xs-3">
+                                <span class="indexPuntuacionPregunta">+12</span>
+                              </div>
+                              <div class="col-xs-3">
+                                <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                              </div>
+                        		</div>
+                          </div>
+                      	</div>
+                        <!-- fin preguntas tecnologia -->
                       </div>
                     </div>
                     <!-- Fin Row -->
@@ -291,6 +406,16 @@
                 <!-- Fin Row -->
 			        </div>
               <!-- Fin Historial -->
+
+              <!-- Principio Ordenacion Categoria -->
+              <div class="indexCategoriaContainer col-md-3 col-xs-12">
+                <a href="programacion.php" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+                <a href="ciencia.php" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
+                <a href="deporte.php" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
+                <a href="arte.php" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
+                <a href="tecnologia.php" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
+              </div>
+              <!-- Fin Ordenacion Categoria -->
            </div>
            <!-- Fin Row -->
         </div>

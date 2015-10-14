@@ -28,8 +28,10 @@ color: #111314;
   font-weight: bold;
   text-decoration:underline;
 }
-.indexCategoria{
+.indexCategoria a{
   color: #4ac143;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 .indexCodigoPregunta{
   text-align: justify;
@@ -49,23 +51,20 @@ color: #111314;
   text-shadow: 2px 1px 0px #000;
   border-radius: 0px 100px 0px 0px;
 }
-.indexPregunta{
+.indexPregunta a{
   text-align: left;
   color: #041c47;
   text-decoration: overline;
 }
 .indexUsuarioPregunta{
   color: #111314;
-  font-size: 16px;
   text-decoration: underline;
 }
 .indexVotoPregunta{
   color: #111314;
-  font-size: 20px;
 }
 .indexPuntuacionPregunta{
   color: #111314;
-  font-size: 25px;
 }
 .indexTextoPregunta{
   font-size: 14px;
@@ -95,6 +94,7 @@ color: #111314;
 }
 .indexPreguntaContainer{
   padding-top: 30px;
+  padding-bottom: 30px;
   text-align: left;
 }
 .iconsContainer{
@@ -142,7 +142,7 @@ color: #111314;
   filter: blur(2px);
 }
 .indexCategoriaContainer{
-    padding-top:10px;
+    padding-top:50px;
 }
 a.list-group-item{
   background-color: #111314;
@@ -259,7 +259,6 @@ a.list-group-item:hover{
   padding-left: 20px; /*Quitar*/
   color: #111314;
   font-weight: bold;
-  font-size: 40px;
   text-shadow: 1px 1px 0px #000;
 }
 .indexTextoCategoria{
@@ -348,6 +347,12 @@ a.list-group-item:hover{
   .indexPregunta{
     font-size: 25px;
   }
+  .indexUsuarioPregunta{
+    font-size: 20px;
+  }
+  .indexCategoria, .indexIconosCategoria{
+    font-size: 40px;
+  }
   .textoCategoria{
     font-size: 60px;
   }
@@ -372,6 +377,15 @@ a.list-group-item:hover{
     top:80%;
     left: 55%;
     font-size: 15px;
+  }
+  .indexPregunta{
+    font-size: 25px;
+  }
+  .indexUsuarioPregunta{
+    font-size: 20px;
+  }
+  .indexCategoria, .indexIconosCategoria{
+    font-size: 40px;
   }
   .textoCategoria{
     font-size: 30px;
@@ -398,6 +412,12 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
+  .indexPregunta{
+    font-size: 20px;
+  }
+  .indexUsuarioPregunta{
+    font-size: 15px;
+  }
   .textoCategoria{
     font-size: 20px;
   }
@@ -421,6 +441,15 @@ a.list-group-item:hover{
   }
   .carousel-caption a{
     font-size: 10px;
+  }
+  .indexPregunta{
+    font-size: 15px;
+  }
+  .indexUsuarioPregunta{
+    font-size: 15px;
+  }
+  .indexCategoria, .indexIconosCategoria{
+    font-size: 30px;
   }
   .textoCategoria{
     font-size: 10px;
