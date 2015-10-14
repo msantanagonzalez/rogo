@@ -55,11 +55,11 @@
                 <div class="row">
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
                     <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
-                    <span>Username</span>
+                    <a href="user.php"><span >Username</span></a>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
                     <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
-                    <span>Configuracion</span>
+                    <a href="configuracion.php"><span>Configuracion</span></a>
                   </div>
                   <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 singleIconContainer">
                     <span class="icon-exit textBlue" aria-hidden="true"></span>
