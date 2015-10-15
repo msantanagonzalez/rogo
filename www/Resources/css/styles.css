@@ -56,9 +56,8 @@ color: #111314;
   color: #041c47;
   text-decoration: overline;
 }
-.indexUsuarioPregunta{
+.indexUsuarioPregunta a{
   color: #111314;
-  text-decoration: underline;
 }
 .indexVotoPregunta{
   color: #111314;
