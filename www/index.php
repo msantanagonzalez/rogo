@@ -53,7 +53,7 @@
                   </div>
                   <div class="col-xs-4 singleIconContainer">
                     <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
-                    <span>Configuracion</span>
+                    <a href="configuracion.php"><span>Configuracion</span></a>
                   </div>
                   <div class="col-xs-4 singleIconContainer">
                     <span class="icon-exit textBlue" aria-hidden="true"></span>
