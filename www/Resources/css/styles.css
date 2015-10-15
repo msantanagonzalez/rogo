@@ -157,12 +157,7 @@ a.list-group-item:hover{
   margin: 0;
   padding: 0;
 }
-.preguntaContainer{
-  margin-top: 20px;
-  background-color: #4ac143;
-  border-radius:10px;
-  border: 2px solid #000;
-}
+
 .mejorRespuestaContainer{
   margin-top: 5px;
   background-color: #151718;
@@ -356,6 +351,12 @@ a.list-group-item:hover{
   .textoCategoria{
     font-size: 60px;
   }
+  .preguntaContainer{
+    margin-top: 20px;
+    background-color: #4ac143;
+    border-radius:10px;
+    border: 2px solid #000;
+  }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -390,6 +391,12 @@ a.list-group-item:hover{
   .textoCategoria{
     font-size: 30px;
   }
+  .preguntaContainer{
+    margin-top: 20px;
+    background-color: #4ac143;
+    border-radius:10px;
+    border: 2px solid #000;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -420,6 +427,12 @@ a.list-group-item:hover{
   }
   .textoCategoria{
     font-size: 20px;
+  }
+  .preguntaContainer{
+    margin-top: 20px;
+    background-color: #4ac143;
+    border-radius:10px;
+    border: 2px solid #000;
   }
 }
 
@@ -453,5 +466,11 @@ a.list-group-item:hover{
   }
   .textoCategoria{
     font-size: 10px;
+  }
+  .preguntaContainer{
+    margin-top: 20px;
+    background-color: #4ac143;
+    border-radius:10px;
+    border: 2px solid #000;
   }
 }
