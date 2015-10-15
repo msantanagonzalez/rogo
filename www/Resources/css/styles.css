@@ -474,7 +474,7 @@ a.list-group-item:hover{
     font-size: 30px;
   }
   .textoCategoria{
-    font-size: 10px;
+    font-size: 14px;
   }
   .preguntaContainer{
     margin-top: 20px;
@@ -485,7 +485,6 @@ a.list-group-item:hover{
   .iconosPregunta{
     color: #fff;
     size:50px;
-
   }
 
 }
