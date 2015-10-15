@@ -105,10 +105,10 @@
                   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 preguntaContainer pull-right">
 
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <p> Centrar elementos en un div? </p>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right">
                         <span class="glyphicon glyphicon-user iconosPregunta"></span>
                         <span> Username </span>
                         <span class="glyphicon glyphicon-question-sign"></span>
@@ -116,10 +116,10 @@
                     </div>
 
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <p> PREGUNTA AQUI </p>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right iconosMovil">
                         <p> Face </p>
                         <p> Puntos </p>
                         <p> Caca </p>
