@@ -145,11 +145,13 @@ color: #111314;
 a.list-group-item{
   background-color: #111314;
   font-size: 16px;
+  text-align: left;
 }
 a.list-group-item:hover{
   background-color: #041c47;
   color: #fff;
   font-size: 18px;
+  text-align: left;
 }
 .contenidoContainer{
   margin: 0;
@@ -400,7 +402,7 @@ a.list-group-item:hover{
     color: #fff;
     size:50px;
   }
-  
+
   .indexVotoPregunta{
     size: 200;
     text-align: right;
