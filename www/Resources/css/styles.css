@@ -56,13 +56,12 @@ color: #111314;
   color: #041c47;
   text-decoration: overline;
 }
-.indexUsuarioPregunta{
+.indexUsuarioPregunta a{
   color: #111314;
-  text-decoration: underline;
 }
-
-.indexPuntuacionPregunta{
-  color: #111314;
+.indexUsuarioPregunta a:hover{
+  color: #041c47;
+  text-decoration: underline;
 }
 .indexTextoPregunta{
   font-size: 14px;
@@ -408,11 +407,6 @@ a.list-group-item:hover{
     size:50px;
   }
 
-  .indexVotoPregunta{
-    size: 200;
-    text-align: right;
-      color: #111314;
-  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -453,9 +447,6 @@ a.list-group-item:hover{
   .iconosPregunta{
     color: #fff;
     size:50px;
-  }
-  .indexVotoPregunta{
-    color: #111314;
   }
 }
 
@@ -503,8 +494,4 @@ a.list-group-item:hover{
   .PreguntaMovil{
     text-align: left;
   }
-  .indexVotoPregunta{
-    color: #111314;
-  }
-
 }
