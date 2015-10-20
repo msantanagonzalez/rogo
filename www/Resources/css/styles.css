@@ -220,6 +220,17 @@ a.list-group-item:hover{
   padding-top: 70px;
   padding-left: 50px;
 }
+.botonAvatar{
+  padding-top: 60px;
+}
+.menuUsuario{
+    padding-top: 25px;
+
+}
+.navbar{
+  background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color:#111314;
+}
 .imagenCategoria{
   min-width: 100%;
 }
