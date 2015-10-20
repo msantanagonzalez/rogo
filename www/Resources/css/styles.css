@@ -180,7 +180,9 @@ a.list-group-item:hover{
   height: 150px;
   overflow: hidden;
 }
-
+.form-group{
+  padding-top: 15px;
+}
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .logo{
   max-width:30%;
@@ -213,6 +215,10 @@ a.list-group-item:hover{
 }
 .indexCategoriaContainer a{
   color: #FFF
+}
+.avatar{
+  padding-top: 70px;
+  padding-left: 50px;
 }
 .imagenCategoria{
   min-width: 100%;
