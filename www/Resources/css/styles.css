@@ -292,6 +292,10 @@ a.list-group-item:hover{
   font-size: 40px;
   text-shadow: 1px 1px 0px #000;
 }
+.avatarPregunta{
+  width: 30px;
+  height: auto;
+}
 /*------------------- Modificaciones sobre clases boostrap ---------------------*/
 .carousel-indicators .active {
   width: 12px;
@@ -424,7 +428,6 @@ a.list-group-item:hover{
     color: #fff;
     size:50px;
   }
-
 }
 
 /* Landscape phone to portrait tablet */
