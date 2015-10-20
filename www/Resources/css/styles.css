@@ -207,7 +207,7 @@ a.list-group-item:hover{
   height: 150px;
   position: absolute;
   top: 0px;
-  right: -15px;
+  right: 0px;
   background: url(../images/noiseHeaderGrey.png) repeat center center;
   background-color:#111314;
   border-radius: 10px 10px 10px 500px;
