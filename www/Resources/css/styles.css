@@ -33,7 +33,7 @@ color: #111314;
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.indexCodigoPregunta{
+.codigoPregunta{
   text-align: justify;
   max-width: 70%;
   margin-left: 10px;
@@ -51,19 +51,29 @@ color: #111314;
   text-shadow: 2px 1px 0px #000;
   border-radius: 0px 100px 0px 0px;
 }
-.indexPregunta a{
+.encabezadoPregunta a{
   text-align: left;
   color: #041c47;
   text-decoration: overline;
 }
-.indexUsuarioPregunta a{
+.indexVoto a{
   color: #111314;
 }
-.indexUsuarioPregunta a:hover{
+.indexVoto a:hover{
   color: #041c47;
   text-decoration: underline;
 }
-.indexTextoPregunta{
+.preguntaVotoActive{
+  color: #041c47;
+}
+.preguntaVoto a{
+  color: #111314;
+}
+.preguntaVoto a:hover{
+  color: #041c47;
+  text-decoration: underline;
+}
+.textoPregunta{
   font-size: 14px;
   text-align: justify;
   color: #111314;
@@ -362,11 +372,14 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 20px;
   }
-  .indexPregunta{
+  .encabezadoPregunta{
     font-size: 25px;
   }
-  .indexUsuarioPregunta{
+  .indexVoto{
     font-size: 20px;
+  }
+  .preguntaVoto{
+    font-size: 25px;
   }
   .indexCategoria, .indexIconosCategoria{
     font-size: 30px;
@@ -406,10 +419,13 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .indexPregunta{
+  .encabezadoPregunta{
     font-size: 25px;
   }
-  .indexUsuarioPregunta{
+  .indexVoto{
+    font-size: 20px;
+  }
+  .preguntaVoto{
     font-size: 20px;
   }
   .indexCategoria, .indexIconosCategoria{
@@ -450,10 +466,13 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .indexPregunta{
+  .encabezadoPregunta{
     font-size: 20px;
   }
-  .indexUsuarioPregunta{
+  .indexVoto{
+    font-size: 15px;
+  }
+  .preguntaVoto{
     font-size: 15px;
   }
   .textoCategoria{
@@ -490,11 +509,14 @@ a.list-group-item:hover{
   .carousel-caption a{
     font-size: 10px;
   }
-  .indexPregunta{
+  .encabezadoPregunta{
     font-size: 15px;
   }
-  .indexUsuarioPregunta{
-    font-size: 15px;
+  .indexVoto{
+    font-size: 20px;
+  }
+  .preguntaVoto{
+    font-size: 10px;
   }
   .indexCategoria, .indexIconosCategoria{
     font-size: 20px;

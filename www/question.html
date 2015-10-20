@@ -100,28 +100,32 @@
                 <div class="col-xs-12 preguntaContainer">
                   <div class="row">
                     <!-- Encabezado Pregunta -->
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 encabezadoPregunta">
                         <p> Centrar elementos en un div? </p>
                     </div>
                     <!-- Fin Encabezado Pregunta -->
 
                     <!-- Cuerpo Pregunta -->
                     <div class="col-xs-12">
-                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <p> PREGUNTA AQUI </p>
-                      </div>
+                        <p class="textoPregunta">Estoy utilizando boostrap y tengo en mi codigo las siguientes lineas:</p>
+                        <pre class="codigoPregunta"><code>&lt;div class=&quot;row&quot;&gt;<br>&#32;&lt;div class=&quot;span7 offset5&quot;&gt;box&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                        <p class="textoPregunta">Intente cambiando los valores del span y offset y por alguna razon el texto no aparece centrado, alguien sabe cual puede ser el error?.</p>
                     </div>
                     <!-- Fin Cuerpo Pregunta -->
 
                     <!-- Footer Pregunta -->
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 preguntaVoto">
                       <div class="row">
-                        <div class="col-xs-6 text-right">
-                          <a href="#"><span class="icon-grin indexVotoPregunta" aria-hidden="true"></span>+1</a>
-                          <span class="indexPuntuacionPregunta">+12</span>
-                          <a href="#"><span class="icon-poopIcon1 indexVotoPregunta" aria-hidden="true"></span>-1</a>
+                        <div class="col-xs-3 col-md-5 text-right">
+                          <span class="icon-grin preguntaVotoActive" aria-hidden="true">+1</span>
                         </div>
-                        <div class="col-xs-6 text-left">
+                        <div class="col-xs-1 col-md-2 text-center">
+                          <span>+12</span>
+                        </div>
+                        <div class="col-xs-1 col-md-2 text-left">
+                          <a href="#"><span class="icon-poopIcon1" aria-hidden="true">-1</span></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3 text-right">
                           <a href="user.html"><img src="Resources/images/avatar-trooper2.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
                         </div>
                       </div>
