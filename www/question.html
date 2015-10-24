@@ -97,36 +97,41 @@
             <!-- Izquierda -->
             <div class="col-md-8 col-xs-12">
                 <!-- Pregunta -->
-                <div class="col-xs-12 preguntaContainer">
+                <div class="col-xs-12 col-md-12 preguntaContainer">
                   <div class="row">
                     <!-- Encabezado Pregunta -->
-                    <div class="col-xs-12 encabezadoPregunta">
+                    <div class="col-xs-12 encabezadoContainer">
+                      <div class="col-xs-10 text-left">
                         <p> Centrar elementos en un div? </p>
+                      </div>
+                      <div class="col-xs-2 text-right">
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                      </div>
                     </div>
                     <!-- Fin Encabezado Pregunta -->
 
                     <!-- Cuerpo Pregunta -->
                     <div class="col-xs-12">
                         <p class="textoPregunta">Estoy utilizando boostrap y tengo en mi codigo las siguientes lineas:</p>
-                        <pre class="codigoPregunta"><code>&lt;div class=&quot;row&quot;&gt;<br>&#32;&lt;div class=&quot;span7 offset5&quot;&gt;box&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                        <pre class="codigoContainer"><code>&lt;div class=&quot;row&quot;&gt;<br>&#32;&lt;div class=&quot;span7 offset5&quot;&gt;box&lt;/div&gt;<br>&lt;/div&gt;</code></pre>
                         <p class="textoPregunta">Intente cambiando los valores del span y offset y por alguna razon el texto no aparece centrado, alguien sabe cual puede ser el error?.</p>
                     </div>
                     <!-- Fin Cuerpo Pregunta -->
 
                     <!-- Footer Pregunta -->
-                    <div class="col-xs-12 preguntaVoto">
+                    <div class="col-xs-12 votoContainer">
                       <div class="row">
-                        <div class="col-xs-3 col-md-5 text-right">
-                          <span class="icon-grin preguntaVotoActive" aria-hidden="true">+1</span>
-                        </div>
-                        <div class="col-xs-1 col-md-2 text-center">
+                        <div class="col-xs-1 col-md-5 text-right">
                           <span>+12</span>
                         </div>
+                        <div class="col-xs-3 col-md-2 text-right voteActive">
+                          <span class="icon-grin" aria-hidden="true"></span>+1
+                        </div>
                         <div class="col-xs-1 col-md-2 text-left">
-                          <a href="#"><span class="icon-poopIcon1" aria-hidden="true">-1</span></a>
+                          <a href="#"><span class="icon-poopIcon1" aria-hidden="true"></span>-1</a>
                         </div>
                         <div class="col-xs-6 col-md-3 text-right">
-                          <a href="user.html"><img src="Resources/images/avatar-trooper2.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                          <a href="user.html"><img src="Resources/images/avatar-glasses.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
                         </div>
                       </div>
                     </div>
@@ -136,18 +141,121 @@
                 <!-- Fin Pregunta -->
 
                 <!-- Mejor respuesta -->
-                <div class="col-xs-12 contenidoContainer">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 mejorRespuestaContainer pull-right">
-                    dasd
+                <div class="col-xs-12 col-md-8 mejorRespuestaContainer pull-right">
+                  <div class="row">
+                    <!-- Encabezado mejor respuesta -->
+                    <div class="col-xs-12 encabezadoContainer text-right">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                    </div>
+                    <!-- Fin Encabezado mejor respuesta -->
+
+                    <!-- Cuerpo mejor respuesta -->
+                    <div class="col-xs-12">
+                      <p class="textoMejorRespuesta">Boostrap trae por defecto una clase "text-center" que implementa el siguiente codigo en css:</p>
+                      <pre class="codigoContainer"><code>style=&quot;text-aligh: center&quot;</code></pre>
+                      <p class="textoMejorRespuesta">Si tu objetivo es centrar el texto,usando esta clase deberias obtener el efecto deseado.</p>
+                    </div>
+                    <!-- Fin Cuerpo mejor respuesta -->
+
+                    <!-- Footer mejor respuesta -->
+                    <div class="col-xs-12 votoContainer">
+                      <div class="row">
+                        <div class="col-xs-4 col-md-3 text-right">
+                          <span>+30</span>
+                        </div>
+                        <div class="col-xs-4 col-md-2 text-right voteActive">
+                          <span class="icon-grin" aria-hidden="true"></span>+1
+                        </div>
+                        <div class="col-xs-4 col-md-2 text-left">
+                          <a href="#"><span class="icon-poopIcon1" aria-hidden="true"></span>-1</a>
+                        </div>
+                        <div class="col-xs-12 col-md-5 text-right">
+                          <a href="user.html">
+                            <img src="Resources/images/avatar-trooper2.png" alt="avatar usuario" class="img-rounded avatarPregunta">
+                            <span>Username</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin Footer mejor respuesta -->
                   </div>
                 </div>
                 <!-- Fin Mejor respuesta -->
 
                 <!-- respuestas -->
-                <div class="col-xs-12 contenidoContainer">
-                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 respuestasContainer pull-right">
-                    dasd
+                <div class="col-xs-12 col-md-8 respuestasContainer pull-right">
+                  <div class="row">
+                    <!-- Encabezado respuesta -->
+                    <div class="col-xs-12 encabezadoContainer text-right">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    </div>
+                    <!-- Fin Encabezado respuesta -->
+                    <!-- Cuerpo respuesta -->
+                    <div class="col-xs-12">
+                      <p>Puedes indicarle un estilo a tu div usando el atributo "style" de html.</p>
+                    </div>
+                    <!-- Fin Cuerpo respuesta -->
+                    <!-- Footer respuesta -->
+                    <div class="col-xs-12 votoContainer">
+                      <div class="row">
+                        <div class="col-xs-4 col-md-3 text-right">
+                          <span>+12</span>
+                        </div>
+                        <div class="col-xs-4 col-md-2 text-right">
+                            <a href="#"><span class="icon-grin" aria-hidden="true"></span>+1</a>
+                        </div>
+                        <div class="col-xs-4 col-md-2 text-left voteActive">
+                          <span class="icon-poopIcon1" aria-hidden="true"></span>-1
+                        </div>
+                        <div class="col-xs-12 col-md-5 text-right">
+                          <a href="user.html">
+                            <img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta">
+                            <span>Username</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin Footer respuesta -->
                   </div>
+                </div>
+
+                <div class="col-xs-12 col-md-8 respuestasContainer pull-right">
+                    <div class="row">
+                        <!-- Encabezado respuesta -->
+                        <div class="col-xs-12 encabezadoContainer text-right">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                        </div>
+                        <!-- Fin Encabezado respuesta -->
+                        <!-- Cuerpo respuesta -->
+                        <div class="col-xs-12">
+                            <p>Si quieres centrar un div en la pagina puedes usar:</p>
+                            <pre class="codigoContainer"><code>.caja {width: 60%;margin: 0 auto;}</code></pre>
+                            <p>Para mas detalles te recomiendo mirar la pagina http://www.w3schools.com/</p>
+                        </div>
+                        <!-- Fin Cuerpo respuesta -->
+                        <!-- Footer respuesta -->
+                        <div class="col-xs-12 votoContainer">
+                            <div class="row">
+                                <div class="col-xs-4 col-md-3 text-right">
+                                    <span>+8</span>
+                                </div>
+                                <div class="col-xs-4 col-md-2 text-right">
+                                    <a href="#"><span class="icon-grin" aria-hidden="true"></span>+1</a>
+                                </div>
+                                <div class="col-xs-4 col-md-2 text-left voteActive">
+                                    <span class="icon-poopIcon1" aria-hidden="true"></span>-1
+                                </div>
+                                <div class="col-xs-12 col-md-5 text-right">
+                                    <a href="user.html">
+                                        <img src="Resources/images/avatar-mario.png" alt="avatar usuario" class="img-rounded avatarPregunta">
+                                        <span>Username</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Footer respuesta -->
+                    </div>
                 </div>
                 <!-- Fin respuestas -->
             </div>

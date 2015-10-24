@@ -33,7 +33,7 @@ color: #111314;
   padding-top: 20px;
   padding-bottom: 30px;
 }
-.codigoPregunta{
+.codigoContainer{
   text-align: justify;
   max-width: 70%;
   margin-left: 10px;
@@ -48,10 +48,10 @@ color: #111314;
   background: url(../images/noiseHeaderGrey.png) repeat center center;
   background-color:#111314;
   color: #fff;
-  text-shadow: 2px 1px 0px #000;
-  border-radius: 0px 100px 0px 0px;
+  text-shadow: 2px 1px 0 #000;
+  border-radius: 0 100px 0 0;
 }
-.encabezadoPregunta a{
+.encabezadoContainer a{
   text-align: left;
   color: #041c47;
   text-decoration: overline;
@@ -63,20 +63,15 @@ color: #111314;
   color: #041c47;
   text-decoration: underline;
 }
-.preguntaVotoActive{
-  color: #041c47;
-}
-.preguntaVoto a{
-  color: #111314;
-}
-.preguntaVoto a:hover{
-  color: #041c47;
-  text-decoration: underline;
-}
 .textoPregunta{
   font-size: 14px;
   text-align: justify;
   color: #111314;
+}
+.textoMejorRespuesta{
+  font-size: 14px;
+  text-align: justify;
+  color: #fff;
 }
 /* ------------------------- Textures  -----------------------*/
 .bodyNoise{
@@ -91,18 +86,14 @@ color: #111314;
   background-color:#111314;
 }
 .buscarContainer{
+  padding-top: 10px;
   padding-bottom: 10px;
 }
-.indexIconsContainer{
+.headerIconsContainer{
   text-align: center;
   padding-top: 80px;
   padding-left: 50px;
   padding-right: 50px;
-}
-.indexPreguntaContainer{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: left;
 }
 .iconsContainer{
   text-align: center;
@@ -151,26 +142,20 @@ color: #111314;
 .indexCategoriaContainer{
     padding-top:50px;
 }
-a.list-group-item{
-  background-color: #111314;
-  font-size: 16px;
-  text-align: left;
-}
-a.list-group-item:hover{
-  background-color: #041c47;
-  color: #fff;
-  font-size: 18px;
-  text-align: left;
-}
 .contenidoContainer{
   margin: 0;
   padding: 0;
 }
-.form-group{
-  color: #111314;
+.indexPreguntaContainer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: left;
 }
-.checkbox{
-  color: #111314;
+.preguntaContainer{
+    margin-top: 20px;
+    background-color: #4ac143;
+    border-radius:10px;
+    border: 2px solid #000;
 }
 .mejorRespuestaContainer{
   margin-top: 5px;
@@ -179,6 +164,7 @@ a.list-group-item:hover{
   border: 2px solid #000;
 }
 .respuestasContainer{
+  color: #111314;
   margin-top: 5px;
   background-color: #fff;
   border-radius:10px;
@@ -189,9 +175,6 @@ a.list-group-item:hover{
   background-color:#111314;
   height: 150px;
   overflow: hidden;
-}
-.form-group{
-  padding-top: 15px;
 }
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .logo{
@@ -223,8 +206,41 @@ a.list-group-item:hover{
   border-radius: 10px 10px 10px 500px;
   z-index: 9;
 }
+.headerIconsContainer a{
+    color: #fff;
+}
+.iconsContainer a{
+    color: #fff;
+}
 .indexCategoriaContainer a{
   color: #FFF
+}
+.preguntaContainer a{
+    color: #fff;
+}
+.preguntaContainer a:hover{
+    color: #041c47;
+}
+.preguntaContainer .voteActive{
+    color: #041c47;
+}
+.mejorRespuestaContainer a{
+    color: #fff;
+}
+.mejorRespuestaContainer a:hover{
+    color: #4ac143;
+}
+.mejorRespuestaContainer .voteActive{
+    color: #4ac143;
+}
+.respuestasContainer a{
+    color: #151718;
+}
+.respuestasContainer a:hover{
+    color: #041c47;
+}
+.respuestasContainer .voteActive{
+    color: #041c47;
 }
 .avatar{
   padding-top: 70px;
@@ -266,6 +282,16 @@ a.list-group-item:hover{
   border-color: #04b6d1;
 }
 .btnCarousel:hover{
+  color: #000;
+  background-color:#4ac143;
+  border-color: #4ac143;
+}
+.btnPregunta{
+  color: #fff;
+  background-color: #041c47;
+  border-color: #041c47;
+}
+.btnPregunta:hover{
   color: #000;
   background-color:#4ac143;
   border-color: #4ac143;
@@ -353,6 +379,24 @@ a.list-group-item:hover{
     background-color: #bbbbbb;
     border-color: #bbbbbb;
 }
+a.list-group-item{
+    background-color: #111314;
+    font-size: 16px;
+    text-align: left;
+}
+a.list-group-item:hover{
+    background-color: #041c47;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+.form-group{
+    padding-top: 15px;
+    color: #111314;
+}
+.checkbox{
+    color: #111314;
+}
 /*--------- Media Queries(Texto responsive) -------*/
 /* Large desktop */
 @media (min-width: 1200px){
@@ -372,13 +416,13 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 20px;
   }
-  .encabezadoPregunta{
+  .encabezadoContainer{
     font-size: 25px;
   }
   .indexVoto{
     font-size: 20px;
   }
-  .preguntaVoto{
+  .votoContainer{
     font-size: 25px;
   }
   .indexCategoria, .indexIconosCategoria{
@@ -387,21 +431,15 @@ a.list-group-item:hover{
   .textoCategoria{
     font-size: 60px;
   }
-  .preguntaContainer{
-    margin-top: 20px;
-    background-color: #4ac143;
-    border-radius:10px;
-    border: 2px solid #000;
-  }
   .iconosPregunta{
     color: #fff;
-    size:50px;
+    font-size:50px;
   }
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1199px){
-  .indexIconsContainer{
+  .headerIconsContainer{
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -419,13 +457,13 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .encabezadoPregunta{
+  .encabezadoContainer{
     font-size: 25px;
   }
   .indexVoto{
     font-size: 20px;
   }
-  .preguntaVoto{
+  .votoContainer{
     font-size: 20px;
   }
   .indexCategoria, .indexIconosCategoria{
@@ -434,21 +472,15 @@ a.list-group-item:hover{
   .textoCategoria{
     font-size: 30px;
   }
-  .preguntaContainer{
-    margin-top: 20px;
-    background-color: #4ac143;
-    border-radius:10px;
-    border: 2px solid #000;
-  }
   .iconosPregunta{
     color: #fff;
-    size:50px;
+    font-size:50px;
   }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px){
-  .indexIconsContainer{
+  .headerIconsContainer{
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
@@ -466,33 +498,27 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .encabezadoPregunta{
+  .encabezadoContainer{
     font-size: 20px;
   }
   .indexVoto{
-    font-size: 15px;
+    font-size: 20px;
   }
-  .preguntaVoto{
+  .votoContainer{
     font-size: 15px;
   }
   .textoCategoria{
     font-size: 20px;
   }
-  .preguntaContainer{
-    margin-top: 20px;
-    background-color: #4ac143;
-    border-radius:10px;
-    border: 2px solid #000;
-  }
   .iconosPregunta{
     color: #fff;
-    size:50px;
+    font-size:50px;
   }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px){
-  .indexIconsContainer{
+  .headerIconsContainer{
     padding-top: 20px;
     padding-left: 0px;
     padding-right: 0px;
@@ -509,13 +535,13 @@ a.list-group-item:hover{
   .carousel-caption a{
     font-size: 10px;
   }
-  .encabezadoPregunta{
-    font-size: 15px;
-  }
-  .indexVoto{
+  .encabezadoContainer{
     font-size: 20px;
   }
-  .preguntaVoto{
+  .indexVoto{
+    font-size: 15px;
+  }
+  .votoContainer{
     font-size: 10px;
   }
   .indexCategoria, .indexIconosCategoria{
@@ -524,15 +550,9 @@ a.list-group-item:hover{
   .textoCategoria{
     font-size: 14px;
   }
-  .preguntaContainer{
-    margin-top: 20px;
-    background-color: #4ac143;
-    border-radius:10px;
-    border: 2px solid #000;
-  }
   .iconosPregunta{
     color: #fff;
-    size:50px;
+    font-size:50px;
   }
   .PreguntaMovil{
     text-align: left;
