@@ -12,21 +12,12 @@ h1,h2,h3{
 }
 
 /* ------------------------- TEXT STYLES -----------------------*/
-.textBlue{
-color: #04b6d1;
-}
-.textGreen{
-color: #4ac143;
-}
-.textGray{
-color: #111314;
-}
-.textBlack{
-  color: #000;
-}
 .indexFecha{
   font-weight: bold;
   text-decoration:underline;
+}
+.indexCategoria{
+  font-size: 40px;
 }
 .indexCategoria a{
   color: #4ac143;
@@ -58,6 +49,12 @@ color: #111314;
 }
 .indexVoto a{
   color: #111314;
+}
+.indexVoto .btnPregunta{
+  color: #fff;
+}
+.puntuacion{
+  font-size: 35px;
 }
 .indexVoto a:hover{
   color: #041c47;
@@ -95,11 +92,17 @@ color: #111314;
   padding-left: 50px;
   padding-right: 50px;
 }
+.headerIconsContainer span{
+  color:#04b6d1;
+}
 .iconsContainer{
   text-align: center;
   padding-top: 15px;
   padding-left: 0px;
   padding-right: 0px;
+}
+.iconsContainer span{
+  color:#04b6d1;
 }
 .singleIconContainer{
   padding-left: 0;
@@ -146,6 +149,10 @@ color: #111314;
   margin: 0;
   padding: 0;
 }
+.avatarContainer{
+  position: relative;
+  bottom: -15px;
+}
 .indexPreguntaContainer{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -169,6 +176,19 @@ color: #111314;
   background-color: #fff;
   border-radius:10px;
   border: 2px solid #000;
+}
+.comentarioContainer{
+  font-size: 12px;
+  color: #000;
+  background-color: #c8c8c8;
+  border-radius:10px;
+  border: 2px solid #000;
+}
+.comentarioContainer .votoContainer{
+  font-size: 12px;
+}
+.comentarioContainer .avatarPregunta{
+  width: 20px;
 }
 .categoriaContainer{
   background: url(../images/noiseHeaderGrey.png) repeat center center;
@@ -287,6 +307,7 @@ color: #111314;
   border-color: #4ac143;
 }
 .btnPregunta{
+  font-size: 15px;
   color: #fff;
   background-color: #041c47;
   border-color: #041c47;
@@ -397,6 +418,9 @@ a.list-group-item:hover{
 .checkbox{
     color: #111314;
 }
+.img-rounded{
+  margin-bottom: 13px;
+}
 /*--------- Media Queries(Texto responsive) -------*/
 /* Large desktop */
 @media (min-width: 1200px){
@@ -416,24 +440,8 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 20px;
   }
-  .encabezadoContainer{
-    font-size: 25px;
-  }
-  .indexVoto{
-    font-size: 20px;
-  }
-  .votoContainer{
-    font-size: 25px;
-  }
-  .indexCategoria, .indexIconosCategoria{
+  .encabezadoContainer p{
     font-size: 30px;
-  }
-  .textoCategoria{
-    font-size: 60px;
-  }
-  .iconosPregunta{
-    color: #fff;
-    font-size:50px;
   }
 }
 
@@ -457,24 +465,8 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .encabezadoContainer{
-    font-size: 25px;
-  }
-  .indexVoto{
-    font-size: 20px;
-  }
-  .votoContainer{
-    font-size: 20px;
-  }
-  .indexCategoria, .indexIconosCategoria{
+  .encabezadoContainer p{
     font-size: 30px;
-  }
-  .textoCategoria{
-    font-size: 30px;
-  }
-  .iconosPregunta{
-    color: #fff;
-    font-size:50px;
   }
 }
 
@@ -498,21 +490,8 @@ a.list-group-item:hover{
     left: 55%;
     font-size: 15px;
   }
-  .encabezadoContainer{
-    font-size: 20px;
-  }
-  .indexVoto{
-    font-size: 20px;
-  }
-  .votoContainer{
-    font-size: 15px;
-  }
-  .textoCategoria{
-    font-size: 20px;
-  }
-  .iconosPregunta{
-    color: #fff;
-    font-size:50px;
+  .encabezadoContainer p{
+    font-size: 28px;
   }
 }
 
@@ -535,26 +514,7 @@ a.list-group-item:hover{
   .carousel-caption a{
     font-size: 10px;
   }
-  .encabezadoContainer{
+  .encabezadoContainer p{
     font-size: 20px;
-  }
-  .indexVoto{
-    font-size: 15px;
-  }
-  .votoContainer{
-    font-size: 10px;
-  }
-  .indexCategoria, .indexIconosCategoria{
-    font-size: 20px;
-  }
-  .textoCategoria{
-    font-size: 14px;
-  }
-  .iconosPregunta{
-    color: #fff;
-    font-size:50px;
-  }
-  .PreguntaMovil{
-    text-align: left;
   }
 }

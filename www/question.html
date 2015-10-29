@@ -1,25 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<!-- Author -->
-  	<meta name="author" content="Marco Santana & Dario Mendez">
-  	<!-- Charset html4 -->
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  	<!-- Charset html5 -->
-  	<meta charset="UTF-8">
+<head>
+    <!-- Author -->
+    <meta name="author" content="Marco Santana & Dario Mendez" />
+    <!-- Charset html5 -->
+    <meta charset="UTF-8" />
     <!-- mobile-optimized -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">  Allow zoom on mobile device -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" /> <!-- Doesn't allow zoom on mobile devicess -->
-  	<!-- For IE(Crazy users) -->
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<!-- CSS(Bootstrap) -->
-  	<link href="Resources/css/bootstrap.css" rel="stylesheet">
+    <!-- SEO description -->
+    <meta name="description" content="Ask,Respond,Interact" />
+    <!-- Avoids google automatic translate -->
+    <meta name="google" content="notranslate" />
+    <!-- Keywords for SEO -->
+    <meta name="keywords" content="ask, question, help, respond, pregunta, ayuda, respuesta" />
+    <!-- CSS(Bootstrap) -->
+    <link href="Resources/css/bootstrap.css" rel="stylesheet" />
     <!-- CSS(Ours) -->
-    <link href="Resources/css/styles.css" rel="stylesheet">
-    <link href="Resources/css/customFonts.css" rel="stylesheet">
+    <link href="Resources/css/styles.css" rel="stylesheet" />
+    <link href="Resources/css/customFonts.css" rel="stylesheet" />
 
-  	<title>Rogo |- Ask and respond </title>
-  </head>
+    <title>Rogo |- Ask and respond </title>
+    <link rel="rogo icon" type="image/x-icon" href="Resources/images/rogo.ico" />
+</head>
 
   <!-- Principio del Cuerpo de la pagina-->
   <body class="bodyNoise">
@@ -32,7 +34,7 @@
 
               <!-- LOGO -->
               <div class="col-xs-12 text-center visible-sm visible-xs">
-                <img src="Resources/images/logo1.png" alt="...">
+                  <a href="index.html"><img src="Resources/images/logo1.png" alt="..."></a>
               </div>
               <!-- Fin Logo-->
 
@@ -50,17 +52,17 @@
               <!-- USUARIO -->
               <div class="col-md-5 col-xs-12 iconsContainer">
                 <div class="row">
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-user textBlue" aria-hidden="true"></span>
-                    <a href="user.html"><span >Username</span></a>
+                    <div class="col-xs-4 singleIconContainer">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <a href="user.html">Username</a>
                   </div>
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-cog textBlue" aria-hidden="true"></span>
-                    <a href="configuracion.html"><span>Configuracion</span></a>
+                    <div class="col-xs-4 singleIconContainer">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                        <a href="configuracion.html">Configuracion</a>
                   </div>
-                  <div class="col-md-4 col-xs-12 singleIconContainer">
-                    <span class="glyphicon glyphicon-off textBlue" aria-hidden="true"></span>
-                    <a href="index.html"><span>Logout</span></a>
+                    <div class="col-xs-4 singleIconContainer">
+                        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+                        <a href="index.html">Logout</a>
                   </div>
                 </div>
               </div>
@@ -183,6 +185,29 @@
                 </div>
                 <!-- Fin Mejor respuesta -->
 
+                <!-- Comentarios -->
+                <div class="col-xs-9 col-md-6 comentarioContainer pull-right">
+                    <div class="row">
+                        <!-- Encabezado comentario -->
+                        <div class="col-xs-12 encabezadoContainer text-right">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        </div>
+                        <!-- Fin Encabezado comentario -->
+                        <!-- Cuerpo comentario -->
+                        <div class="col-xs-12">
+                            <p>Tambien trae otras clases para alinear el texto dentro de un div,solo tienes que usar "text-" seguido de la posicion deseada.</p>
+                        </div>
+                        <!-- Fin Cuerpo comentario -->
+                        <!-- Footer comentario -->
+                        <div class="col-xs-12 col-md-12 votoContainer text-right">
+                            <a href="user.html">
+                                <img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta">
+                                <span>Username</span>
+                            </a>
+                        </div>
+                        <!-- Fin Footer comentario -->
+                    </div>
+                </div>
                 <!-- respuestas -->
                 <div class="col-xs-12 col-md-8 respuestasContainer pull-right">
                   <div class="row">
