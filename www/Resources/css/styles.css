@@ -195,7 +195,6 @@ h1,h2,h3{
 }
 .mejorRespuestaContainer{
   margin-top: 25px;
-    margin-bottom: 40px;
   background-color: #151718;
 }
 .mejorRespuestaContainer .encabezadoContainer{
@@ -223,6 +222,7 @@ h1,h2,h3{
 }
 
 .respuestasContainer{
+    margin-top: 20px;
     margin-bottom: 30px;
   color: #111314;
     background: url(../images/noiseBody.png) repeat center center;
