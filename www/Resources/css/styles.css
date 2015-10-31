@@ -34,13 +34,18 @@ h1,h2,h3{
 .textoCategoria{
   position: absolute;
   bottom: -10px;
-  left: -5px;
-  width: 40%;
   background: url(../images/noiseHeaderGrey.png) repeat center center;
   background-color:#111314;
   color: #fff;
-  text-shadow: 2px 1px 0 #000;
   border-radius: 0 100px 0 0;
+}
+.categoriaContainer p{
+    font-size: 40px;
+}
+.categoriaContainer span{
+    padding-left: 5px;
+    margin-right: 50px;
+    color: #4ac143;
 }
 .encabezadoContainer a{
   text-align: left;
@@ -100,14 +105,15 @@ h1,h2,h3{
   text-align: center;
   padding-top: 15px;
   padding-left: 0px;
-  padding-right: 0px;
 }
 .iconsContainer span{
   color:#04b6d1;
 }
 .singleIconContainer{
-  padding-left: 0;
-  padding-right: 0;
+  padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .indexLogoContainer {
   position: absolute;
@@ -118,8 +124,8 @@ h1,h2,h3{
 .logoContainer {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 10%;
+  right: 10px;
   text-align: right;
   z-index: 10;
 }
@@ -163,30 +169,91 @@ h1,h2,h3{
     margin-top: 20px;
     background-color: #4ac143;
     border-radius:10px;
-    border: 2px solid #000;
+    color: #151718;
+}
+.usuarioPregunta,.usuarioMejorRespuesta{
+   margin-top: 10px;
+}
+.preguntaContainer .encabezadoContainer p{
+  text-decoration: underline;
+    font-weight: bold;
+}
+.preguntaContainer .encabezadoContainer span{
+    margin-top: 5px;
+    font-size: 30px;
+}
+.preguntaContainer .votePoints{
+    font-size: 40px;
+    color: #041c47;
+}
+.preguntaContainer .votes{
+    font-size: 30px;
+}
+
+.preguntaContainer .voteActive{
+    color: #041c47;
 }
 .mejorRespuestaContainer{
-  margin-top: 5px;
+  margin-top: 25px;
+    margin-bottom: 40px;
   background-color: #151718;
-  border-radius:10px;
-  border: 2px solid #000;
 }
+.mejorRespuestaContainer .encabezadoContainer{
+    font-size: 20px;
+}
+.mejorRespuestaContainer .encabezadoContainer .glyphicon-star{
+    font-size: 25px;
+    color: #4ac143;
+}
+.mejorRespuestaContainer .votePoints{
+    font-size: 25px;
+    color: #4ac143;
+}
+.mejorRespuestaContainer .votes{
+    font-size: 20px;
+}
+.mejorRespuestaContainer .usuarioMejorRespuesta p{
+  color: #fff;
+}
+ .mejorRespuestaContainer .btnComentarios,.respuestasContainer .btnComentarios{
+    font-size: 15px;
+     color:#000;
+     background-color: #c8c8c8;
+    border-color: #c8c8c8;
+}
+
 .respuestasContainer{
+    margin-bottom: 30px;
   color: #111314;
-  margin-top: 5px;
-  background-color: #fff;
-  border-radius:10px;
-  border: 2px solid #000;
+    background: url(../images/noiseBody.png) repeat center center;
+    background-color: #fefefe;
 }
+.respuestasContainer .encabezadoContainer{
+  font-size: 25px;
+}
+.respuestasContainer .votePoints{
+    font-size: 25px;
+    color: #041c47;
+}
+.respuestasContainer .votes{
+    font-size: 20px;
+}
+
 .comentarioContainer{
+  border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 2px;
   font-size: 12px;
   color: #000;
   background-color: #c8c8c8;
-  border-radius:10px;
-  border: 2px solid #000;
+    font-weight: bold;
 }
-.comentarioContainer .votoContainer{
-  font-size: 12px;
+.comentarioContainer a{
+    color: #000;
+}
+.comentarioContainer a:hover{
+    color: #000;
 }
 .comentarioContainer .avatarPregunta{
   width: 20px;
@@ -197,6 +264,23 @@ h1,h2,h3{
   height: 150px;
   overflow: hidden;
 }
+.mainQuestionContainer{
+    background: url(../images/noiseHeaderGrey.png) repeat center center;
+  background-color: #111314;
+}
+.nuevaRespuestaContainer{
+    text-align: center;
+    margin-top: 10px;
+   color:#fff;
+}
+.nuevaRespuestaContainer a{
+    background-color: #111314;
+}
+.nuevaRespuestaContainer span{
+    color: #04b6d1;
+    font-size: 100px;
+}
+
 /* ------------------------- ELEMENT STYLES  -----------------------*/
 .logo{
   max-width:30%;
@@ -237,12 +321,9 @@ h1,h2,h3{
   color: #FFF
 }
 .preguntaContainer a{
-    color: #fff;
+    color: #151718;
 }
 .preguntaContainer a:hover{
-    color: #041c47;
-}
-.preguntaContainer .voteActive{
     color: #041c47;
 }
 .mejorRespuestaContainer a{
@@ -342,13 +423,6 @@ h1,h2,h3{
   max-width: 500px;
   background-color: #c8c8c8;
   color: #111314;
-}
-.iconosCategoria{
-  padding-left: 15px; /*Quitar*/
-  color: #4ac143;
-  font-weight: bold;
-  font-size: 40px;
-  text-shadow: 1px 1px 0px #000;
 }
 .avatarPregunta{
   width: 30px;
@@ -579,9 +653,25 @@ td.active a, a:active {
     font-size: 10px;
   }
   .encabezadoContainer p{
+      text-align: justify;
     font-size: 20px;
   }
   .indexCategoria{
     font-size: 30px;
   }
+  .singleIconContainer{
+      font-size: 12px;
+  }
+.categoriaContainer p{
+    font-size: 30px;
+}
+.preguntaContainer .encabezadoContainer span{
+    font-size: 20px;
+}
+.preguntaContainer .votePoints{
+        font-size: 25px;
+}
+.preguntaContainer .votes{
+        font-size: 25px;
+}
 }

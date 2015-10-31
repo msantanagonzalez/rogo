@@ -54,11 +54,11 @@
                 <div class="row">
                     <div class="col-xs-4 singleIconContainer">
                         <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                        <a href="user.html">Username</a>
+                        <a href="#">Username</a>
                   </div>
                     <div class="col-xs-4 singleIconContainer">
                         <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                        <a href="configuracion.html">Configuracion</a>
+                        <a href="#">Configuracion</a>
                   </div>
                     <div class="col-xs-4 singleIconContainer">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
@@ -81,23 +81,18 @@
 
         <!-- Categoria -->
         <div class="col-xs-12 categoriaContainer">
-            <div class="col-xs-12 categoriaContainer">
               <img id="imagenProgramacion" src="Resources/images/carouselProgramacion.png" alt="Imagen sobre el tema seleccionado" class="imagenCategoria">
-              <p class="textoCategoria text-center">Programacion <span class="icon-terminal iconosCategoria" aria-hidden="true"></span></p>
-            </div>
+              <p class="textoCategoria text-center">Programacion <span class="icon-terminal" aria-hidden="true"></span></p>
         </div>
         <!-- Fin Categoria -->
 
-        <!-- Separador -->
-        <div class="col-xs-12 separator">
-        </div>
-        <!-- Fin Separador -->
+
 
         <!-- CONTENIDO -->
         <div class="col-xs-12">
           <div class="row">
             <!-- Izquierda -->
-            <div class="col-md-8 col-xs-12">
+            <div class="col-xs-12 col-md-8 mainQuestionContainer">
                 <!-- Pregunta -->
                 <div class="col-xs-12 col-md-12 preguntaContainer">
                   <div class="row">
@@ -121,19 +116,22 @@
                     <!-- Fin Cuerpo Pregunta -->
 
                     <!-- Footer Pregunta -->
-                    <div class="col-xs-12 votoContainer">
+                    <div class="col-xs-12">
                       <div class="row">
-                        <div class="col-xs-1 col-md-5 text-right">
-                          <span>+12</span>
+                        <div class="col-xs-4 col-md-6 text-right">
+                          <span class="votePoints">+12</span>
                         </div>
-                        <div class="col-xs-3 col-md-2 text-right voteActive">
+                        <div class="col-xs-4 col-md-3 text-right votes voteActive">
                           <span class="icon-grin" aria-hidden="true"></span>+1
                         </div>
-                        <div class="col-xs-1 col-md-2 text-left">
+                        <div class="col-xs-4 col-md-3 text-left votes">
                           <a href="#"><span class="icon-poopIcon1" aria-hidden="true"></span>-1</a>
                         </div>
-                        <div class="col-xs-6 col-md-3 text-right">
-                          <a href="user.html"><img src="Resources/images/avatar-glasses.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                        <div class="col-xs-12 col-md-12 text-right usuarioPregunta">
+                            <p>
+                                Por <a href="user.html"><img src="Resources/images/avatar-glasses.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                                el <a href="#">01/11/2015</a>
+                            </p>
                         </div>
                       </div>
                     </div>
@@ -161,23 +159,25 @@
                     <!-- Fin Cuerpo mejor respuesta -->
 
                     <!-- Footer mejor respuesta -->
-                    <div class="col-xs-12 votoContainer">
+                    <div class="col-xs-12">
                       <div class="row">
-                        <div class="col-xs-4 col-md-3 text-right">
-                          <span>+30</span>
+                        <div class="col-xs-4 col-md-4 text-right">
+                          <span class="votePoints">+30</span>
                         </div>
-                        <div class="col-xs-4 col-md-2 text-right voteActive">
+                        <div class="col-xs-4 col-md-4 text-right votes voteActive">
                           <span class="icon-grin" aria-hidden="true"></span>+1
                         </div>
-                        <div class="col-xs-4 col-md-2 text-left">
+                        <div class="col-xs-4 col-md-4 text-left votes">
                           <a href="#"><span class="icon-poopIcon1" aria-hidden="true"></span>-1</a>
                         </div>
-                        <div class="col-xs-12 col-md-5 text-right">
-                          <a href="user.html">
-                            <img src="Resources/images/avatar-trooper2.png" alt="avatar usuario" class="img-rounded avatarPregunta">
-                            <span>Username</span>
-                          </a>
+                        <div class="col-xs-12 text-right usuarioMejorRespuesta">
+                            <a href="user.html"><img src="Resources/images/avatar-trooper2.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
                         </div>
+                          <div class="col-xs-12 text-right">
+                              <a class="btn btnComentarios" role="button" data-toggle="collapse" href="#comentariosMasVotada" aria-expanded="false" aria-controls="comentariosMasVotada">
+                                  Comentarios <span class="badge">2</span>
+                              </a>
+                          </div>
                       </div>
                     </div>
                     <!-- Fin Footer mejor respuesta -->
@@ -185,30 +185,50 @@
                 </div>
                 <!-- Fin Mejor respuesta -->
 
-                <!-- Comentarios -->
-                <div class="col-xs-9 col-md-6 comentarioContainer pull-right">
-                    <div class="row">
-                        <!-- Encabezado comentario -->
-                        <div class="col-xs-12 encabezadoContainer text-right">
-                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <!-- Comentarios MasVotada -->
+                <div id="comentariosMasVotada" class="col-xs-9 col-md-6 collapse pull-right">
+                    <div class="col-xs-12 comentarioContainer">
+                        <div class="row">
+                            <!-- Encabezado comentario -->
+                            <div class="col-xs-12 encabezadoContainer text-right">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            </div>
+                            <!-- Fin Encabezado comentario -->
+                            <!-- Cuerpo comentario -->
+                            <div class="col-xs-12">
+                                <p>Tambien trae otras clases para alinear el texto dentro de un div,solo tienes que usar "text-" seguido de la posicion deseada.</p>
+                            </div>
+                            <!-- Fin Cuerpo comentario -->
+                            <!-- Footer comentario -->
+                            <div class="col-xs-12 col-md-12 text-right">
+                                <a href="#"><img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                            </div>
+                            <!-- Fin Footer comentario -->
                         </div>
-                        <!-- Fin Encabezado comentario -->
-                        <!-- Cuerpo comentario -->
-                        <div class="col-xs-12">
-                            <p>Tambien trae otras clases para alinear el texto dentro de un div,solo tienes que usar "text-" seguido de la posicion deseada.</p>
+                    </div>
+                    <div class="col-xs-12 comentarioContainer">
+                        <div class="row">
+                            <!-- Encabezado comentario -->
+                            <div class="col-xs-12 encabezadoContainer text-right">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            </div>
+                            <!-- Fin Encabezado comentario -->
+                            <!-- Cuerpo comentario -->
+                            <div class="col-xs-12">
+                                <p>Con esa clase no solo centras el texto, centras todo.</p>
+                            </div>
+                            <!-- Fin Cuerpo comentario -->
+                            <!-- Footer comentario -->
+                            <div class="col-xs-12 col-md-12 text-right">
+                                <a href="#"><img src="Resources/images/avatar-mario.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                            </div>
+                            <!-- Fin Footer comentario -->
                         </div>
-                        <!-- Fin Cuerpo comentario -->
-                        <!-- Footer comentario -->
-                        <div class="col-xs-12 col-md-12 votoContainer text-right">
-                            <a href="user.html">
-                                <img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta">
-                                <span>Username</span>
-                            </a>
-                        </div>
-                        <!-- Fin Footer comentario -->
                     </div>
                 </div>
-                <!-- respuestas -->
+                <!-- Fin Comentarios MasVotada -->
+
+                <!-- respuesta1 -->
                 <div class="col-xs-12 col-md-8 respuestasContainer pull-right">
                   <div class="row">
                     <!-- Encabezado respuesta -->
@@ -222,29 +242,56 @@
                     </div>
                     <!-- Fin Cuerpo respuesta -->
                     <!-- Footer respuesta -->
-                    <div class="col-xs-12 votoContainer">
+                    <div class="col-xs-12">
                       <div class="row">
-                        <div class="col-xs-4 col-md-3 text-right">
-                          <span>+12</span>
+                        <div class="col-xs-4 col-md-4 text-right">
+                          <span class="votePoints">+12</span>
                         </div>
-                        <div class="col-xs-4 col-md-2 text-right">
+                        <div class="col-xs-4 col-md-4 text-right votes">
                             <a href="#"><span class="icon-grin" aria-hidden="true"></span>+1</a>
                         </div>
-                        <div class="col-xs-4 col-md-2 text-left voteActive">
-                          <span class="icon-poopIcon1" aria-hidden="true"></span>-1
+                        <div class="col-xs-4 col-md-4 text-left votes">
+                          <a href=""><span class="icon-poopIcon1" aria-hidden="true"></span>-1</a>
                         </div>
-                        <div class="col-xs-12 col-md-5 text-right">
-                          <a href="user.html">
-                            <img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta">
-                            <span>Username</span>
-                          </a>
+                        <div class="col-xs-12 text-right">
+                          <a href="user.html"><img src="Resources/images/avatar-jesus.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
                         </div>
                       </div>
                     </div>
+                      <div class="col-xs-12 text-right">
+                          <a class="btn btnComentarios" role="button" data-toggle="collapse" href="#comentariosRespuesta1" aria-expanded="false" aria-controls="comentariosRespuesta1">
+                              Comentarios <span class="badge">1</span>
+                          </a>
+                      </div>
                     <!-- Fin Footer respuesta -->
                   </div>
                 </div>
+                <!-- Fin respuesta1 -->
+                <!-- Comentarios respuesta1 -->
+                <div id="comentariosRespuesta1" class="col-xs-9 col-md-6 collapse pull-right">
+                    <div class="col-xs-12 comentarioContainer">
+                        <div class="row">
+                            <!-- Encabezado comentario -->
+                            <div class="col-xs-12 encabezadoContainer text-right">
+                                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                            </div>
+                            <!-- Fin Encabezado comentario -->
+                            <!-- Cuerpo comentario -->
+                            <div class="col-xs-12">
+                                <p>No es recomendable usar style, para eso existe CSS</p>
+                            </div>
+                            <!-- Fin Cuerpo comentario -->
+                            <!-- Footer comentario -->
+                            <div class="col-xs-12 col-md-12 text-right">
+                                <a href="#"><img src="Resources/images/avatar-captain.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                            </div>
+                            <!-- Fin Footer comentario -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Comentarios respuesta1 -->
 
+                <!-- respuesta2 -->
                 <div class="col-xs-12 col-md-8 respuestasContainer pull-right">
                     <div class="row">
                         <!-- Encabezado respuesta -->
@@ -260,21 +307,23 @@
                         </div>
                         <!-- Fin Cuerpo respuesta -->
                         <!-- Footer respuesta -->
-                        <div class="col-xs-12 votoContainer">
+                        <div class="col-xs-12">
                             <div class="row">
-                                <div class="col-xs-4 col-md-3 text-right">
-                                    <span>+8</span>
+                                <div class="col-xs-4 col-md-4 text-right">
+                                    <span class="votePoints">+5</span>
                                 </div>
-                                <div class="col-xs-4 col-md-2 text-right">
+                                <div class="col-xs-4 col-md-4 text-right votes">
                                     <a href="#"><span class="icon-grin" aria-hidden="true"></span>+1</a>
                                 </div>
-                                <div class="col-xs-4 col-md-2 text-left voteActive">
+                                <div class="col-xs-4 col-md-4 text-left votes voteActive">
                                     <span class="icon-poopIcon1" aria-hidden="true"></span>-1
                                 </div>
-                                <div class="col-xs-12 col-md-5 text-right">
-                                    <a href="user.html">
-                                        <img src="Resources/images/avatar-mario.png" alt="avatar usuario" class="img-rounded avatarPregunta">
-                                        <span>Username</span>
+                                <div class="col-xs-12 text-right">
+                                    <a href="user.html"><img src="Resources/images/avatar-solo.png" alt="avatar usuario" class="img-rounded avatarPregunta"> Username</a>
+                                </div>
+                                <div class="col-xs-12 text-right">
+                                    <a class="btn btnComentarios" role="button" data-toggle="collapse" href="#comentariosRespuesta2" aria-expanded="false" aria-controls="comentariosRespuesta2">
+                                        Comentarios <span class="badge">0</span>
                                     </a>
                                 </div>
                             </div>
@@ -282,18 +331,18 @@
                         <!-- Fin Footer respuesta -->
                     </div>
                 </div>
-                <!-- Fin respuestas -->
+                <!-- Fin respuesta2 -->
             </div>
             <!-- Fin izquierda -->
 
             <!-- Derecha -->
-            <div class="indexCategoriaContainer col-md-3 col-md-offset-1 col-xs-12">
-              <a href="programacion.html" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
-              <a href="ciencia.html" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
-              <a href="deporte.html" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
-              <a href="arte.html" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
-              <a href="tecnologia.html" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
-            </div>
+             <div class="indexCategoriaContainer col-xs-12 col-md-3 col-md-offset-1">
+                 <a href="programacion.html" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+                 <a href="ciencia.html" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
+                 <a href="deporte.html" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
+                 <a href="arte.html" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
+                 <a href="tecnologia.html" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
+             </div>
             <!-- Fin Derecha -->
           </div>
         </div>
