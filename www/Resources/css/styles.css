@@ -47,7 +47,8 @@ h1,h2,h3{
   color: #041c47;
   text-decoration: overline;
 }
-.indexVoto a{
+
+.indexVoto a,p{
   color: #111314;
 }
 .indexVoto .btnPregunta{
@@ -385,6 +386,12 @@ h1,h2,h3{
   position: absolute;
   z-index: 10;
 }
+.carousel-control{
+    color: #04b6d1;
+}
+.carousel-control:focus{
+    color: #04b6d1;
+}
 .btn-default {
     color: #FFF;
     background-color: #04b6d1;
@@ -421,6 +428,63 @@ a.list-group-item:hover{
 .img-rounded{
   margin-bottom: 13px;
 }
+/* ------------------------- Calendario  -----------------------*/
+.cal {
+  margin-top: 20px;
+  color: #404040;
+}
+caption {
+  line-height: 32px;
+  font-weight: bold;
+  color: #e2e2e2;
+  text-align: center;
+  text-shadow: 0 -1px black;
+  background: #111314;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #313131;
+}
+caption a{
+  line-height: 32px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #4ac143;
+}
+
+caption a:hover { color: #fff; }
+caption a.prev { float: left; }
+caption a.next { float: right; }
+
+th {
+  text-align: center;
+  font-size: 15px;
+  color: #111314;
+  text-transform: uppercase;
+  background: #f3f3f3;
+}
+
+td {
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #c2c2c2;
+  border-top: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+}
+td a {
+  line-height: 28px;
+  color: #666;
+}
+
+.off{
+  text-decoration: line-through;
+}
+
+td.active a, a:active {
+   margin: -1px;
+   color: #f3f3f3;
+   background: #4ac143;
+   border: 1px solid #4ac143;
+ }
 /*--------- Media Queries(Texto responsive) -------*/
 /* Large desktop */
 @media (min-width: 1200px){
@@ -516,5 +580,8 @@ a.list-group-item:hover{
   }
   .encabezadoContainer p{
     font-size: 20px;
+  }
+  .indexCategoria{
+    font-size: 30px;
   }
 }
