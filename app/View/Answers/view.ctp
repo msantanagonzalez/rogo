@@ -41,6 +41,8 @@
 		<li><?php echo $this->Html->link(__('New Question'), array('controller' => 'questions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Comments'), array('controller' => 'comments', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Vote Answers'), array('controller' => 'vote_answers', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Vote Answer'), array('controller' => 'vote_answers', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
 <div class="related">
@@ -75,6 +77,39 @@
 	<div class="actions">
 		<ul>
 			<li><?php echo $this->Html->link(__('New Comment'), array('controller' => 'comments', 'action' => 'add')); ?> </li>
+		</ul>
+	</div>
+</div>
+<div class="related">
+	<h3><?php echo __('Related Vote Answers'); ?></h3>
+	<?php if (!empty($answer['VoteAnswer'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>
+		<th><?php echo __('Id'); ?></th>
+		<th><?php echo __('Value'); ?></th>
+		<th><?php echo __('User Id'); ?></th>
+		<th><?php echo __('Answer Id'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php foreach ($answer['VoteAnswer'] as $voteAnswer): ?>
+		<tr>
+			<td><?php echo $voteAnswer['id']; ?></td>
+			<td><?php echo $voteAnswer['value']; ?></td>
+			<td><?php echo $voteAnswer['user_id']; ?></td>
+			<td><?php echo $voteAnswer['answer_id']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'vote_answers', 'action' => 'view', $voteAnswer['id'])); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'vote_answers', 'action' => 'edit', $voteAnswer['id'])); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'vote_answers', 'action' => 'delete', $voteAnswer['id']), array('confirm' => __('Are you sure you want to delete # %s?', $voteAnswer['id']))); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions">
+		<ul>
+			<li><?php echo $this->Html->link(__('New Vote Answer'), array('controller' => 'vote_answers', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 </div>

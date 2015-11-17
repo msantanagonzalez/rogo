@@ -54,5 +54,7 @@
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Answers'), array('controller' => 'answers', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Answer'), array('controller' => 'answers', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Vote Questions'), array('controller' => 'vote_questions', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Vote Question'), array('controller' => 'vote_questions', 'action' => 'add')); ?> </li>
 	</ul>
 </div>
