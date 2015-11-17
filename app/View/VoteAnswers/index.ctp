@@ -1,32 +1,30 @@
-<div class="questions index">
-	<h2><?php echo __('Questions'); ?></h2>
+<div class="voteAnswers index">
+	<h2><?php echo __('Vote Answers'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('title'); ?></th>
-			<th><?php echo $this->Paginator->sort('description'); ?></th>
-			<th><?php echo $this->Paginator->sort('category'); ?></th>
-			<th><?php echo $this->Paginator->sort('date'); ?></th>
+			<th><?php echo $this->Paginator->sort('value'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
+			<th><?php echo $this->Paginator->sort('answer_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
 	<tbody>
-	<?php foreach ($questions as $question): ?>
+	<?php foreach ($voteAnswers as $voteAnswer): ?>
 	<tr>
-		<td><?php echo h($question['Question']['id']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['title']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['description']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['category']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['date']); ?>&nbsp;</td>
+		<td><?php echo h($voteAnswer['VoteAnswer']['id']); ?>&nbsp;</td>
+		<td><?php echo h($voteAnswer['VoteAnswer']['value']); ?>&nbsp;</td>
 		<td>
-			<?php echo $this->Html->link($question['User']['name'], array('controller' => 'users', 'action' => 'view', $question['User']['id'])); ?>
+			<?php echo $this->Html->link($voteAnswer['User']['name'], array('controller' => 'users', 'action' => 'view', $voteAnswer['User']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($voteAnswer['Answer']['id'], array('controller' => 'answers', 'action' => 'view', $voteAnswer['Answer']['id'])); ?>
 		</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $question['Question']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $question['Question']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $question['Question']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $question['Question']['id']))); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $voteAnswer['VoteAnswer']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $voteAnswer['VoteAnswer']['id'])); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $voteAnswer['VoteAnswer']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $voteAnswer['VoteAnswer']['id']))); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -49,7 +47,7 @@
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
-		<li><?php echo $this->Html->link(__('New Question'), array('action' => 'add')); ?></li>
+		<li><?php echo $this->Html->link(__('New Vote Answer'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Answers'), array('controller' => 'answers', 'action' => 'index')); ?> </li>

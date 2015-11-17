@@ -1,13 +1,12 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Answer Model
+ * VoteQuestion Model
  *
  * @property User $User
  * @property Question $Question
- * @property Comment $Comment
  */
-class Answer extends AppModel {
+class VoteQuestion extends AppModel {
 
 /**
  * Validation rules
@@ -60,26 +59,4 @@ class Answer extends AppModel {
 			'order' => ''
 		)
 	);
-
-/**
- * hasMany associations
- *
- * @var array
- */
-	public $hasMany = array(
-		'Comment' => array(
-			'className' => 'Comment',
-			'foreignKey' => 'answer_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }
