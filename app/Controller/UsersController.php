@@ -15,14 +15,19 @@ class UsersController extends AppController {
  */
 	public $components = array('Paginator');
 
+	public $paginate = array(
+		'limit' => 3,
+		'contain' => array('User')
+	);
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->User->recursive = 0;
-		$this->set('users', $this->Paginator->paginate());
+		$this->Paginator->settings = $this->paginate;
+		$data = $this->Paginator->paginate('User');
+		$this->set('users',$data);
 	}
 
 /**
