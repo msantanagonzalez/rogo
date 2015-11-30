@@ -9,6 +9,6 @@
     </div>
     <div class="col-xs-4 singleIconContainer">
         <span class="icon-exit" aria-hidden="true"></span>
-        <a href="users/logout">Logout</a>
+        <a href="/users/logout">Logout</a>
     </div>
 </div>

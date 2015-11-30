@@ -1,6 +1,6 @@
 <!-- LOGO SMALL DEVICES -->
 <div class="col-xs-12 text-center visible-sm visible-xs">
-    <a href="index.php">
+    <a href="/index.php">
         <?php echo $this->Html->image('rogo/logo1.png', array('alt' => 'Site logo')); ?>
     </a>
 </div>
