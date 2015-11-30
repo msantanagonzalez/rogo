@@ -1,60 +1,464 @@
-<div class="questions index">
-	<h2><?php echo __('Questions'); ?></h2>
-	<table cellpadding="0" cellspacing="0">
-	<thead>
-	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('title'); ?></th>
-			<th><?php echo $this->Paginator->sort('description'); ?></th>
-			<th><?php echo $this->Paginator->sort('category'); ?></th>
-			<th><?php echo $this->Paginator->sort('date'); ?></th>
-			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
-			<th class="actions"><?php echo __('Actions'); ?></th>
-	</tr>
-	</thead>
-	<tbody>
-	<?php foreach ($questions as $question): ?>
-	<tr>
-		<td><?php echo h($question['Question']['id']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['title']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['description']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['category']); ?>&nbsp;</td>
-		<td><?php echo h($question['Question']['date']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($question['User']['name'], array('controller' => 'users', 'action' => 'view', $question['User']['id'])); ?>
-		</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $question['Question']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $question['Question']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $question['Question']['id']), array('confirm' => __('Are you sure you want to delete # %s?', $question['Question']['id']))); ?>
-		</td>
-	</tr>
-<?php endforeach; ?>
-	</tbody>
-	</table>
-	<p>
-	<?php
-	echo $this->Paginator->counter(array(
-		'format' => __('Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}')
-	));
-	?>	</p>
-	<div class="paging">
-	<?php
-		echo $this->Paginator->prev('< ' . __('previous'), array(), null, array('class' => 'prev disabled'));
-		echo $this->Paginator->numbers(array('separator' => ''));
-		echo $this->Paginator->next(__('next') . ' >', array(), null, array('class' => 'next disabled'));
-	?>
+<?php
+$this->start('header');
+echo $this->element('homeTop');
+?>
+<!-- REGISTRO/USER DATA + CAROUSEL -->
+<div class="col-xs-12">
+	<div class="row">
+		<?php
+		if (AuthComponent::user('username')){
+		?>
+			<!-- USER INFO -->
+			<div class="col-md-3 col-xs-12 userDataContainer text-center">
+		<?php
+			echo $this->Flash->render();
+			echo $this->element('common/userData');
+			echo $this->fetch('homeUserData');
+		?>
+			</div>
+			<!-- End of USER INFO -->
+		<?php
+		}else{
+		?>
+			<!-- LOGIN/REGISTRO -->
+			<div class="col-md-3 col-xs-12">
+				<div class="row">
+					<!-- REGISTRO -->
+					<div class="col-xs-12 registroContainer">
+						REGISTRO
+						<?php
+						echo $this->Flash->render();
+						echo $this->Form->create('User',array(
+								'url' => array('controller' => 'users','action' => 'add'),
+								'class' => 'form-horizontal',
+								'inputDefaults' => array('label' => false)
+							)
+						); ?>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'name',
+									array('class' => 'form-control','placeholder' => 'Nombre')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'email',
+									array('class' => 'form-control','placeholder' => 'Email')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'username',
+									array('class' => 'form-control','placeholder' => 'username')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'password',
+									array('class' => 'form-control','placeholder' => 'password','type' => 'password')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'password_confirm',
+									array('class' => 'form-control','placeholder' => 'repeat password','type' => 'password')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php
+								echo $this->Form->submit('Registrarse',array('class' => 'btn btn-primary'));
+								?>
+							</div>
+						</div>
+						<?php echo $this->Form->end(); ?>
+					</div>
+					<!-- End of REGISTRO -->
+					<!-- LOGIN -->
+					<div class="col-xs-12 registroContainer">
+						LOGIN
+						<?php
+						echo $this->Flash->render('auth');
+						echo $this->Form->create('User',array(
+								'url' => array('controller' => 'users','action' => 'login'),
+								'class' => 'form-horizontal',
+								'inputDefaults' => array('label' => false)
+							)
+						); ?>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'username',
+									array('class' => 'form-control','placeholder' => 'username')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->input(
+									'password',
+									array('class' => 'form-control','placeholder' => 'password','type' => 'password')
+								);?>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-8 col-lg-offset-2">
+								<?php echo $this->Form->submit('Login',array('class' => 'btn btn-primary')); ?>
+							</div>
+						</div>
+						<?php echo $this->Form->end(); ?>
+					</div>
+					<!-- End of LOGIN -->
+				</div>
+			</div>
+		<?php
+		}
+		?>
+		<!-- CAROUSEL -->
+		<div class="col-md-9 col-xs-12 carouselContainer">
+
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0-" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<?php
+						echo $this->Html->image('rogo/carouselProgramacion.png', array('alt' => 'Imagen carrousel', 'class' => 'carouselImageContainer'));
+						?>
+							<div class="carousel-caption">
+								<h1>Programacion</h1>
+								<p><?php echo $questionsCarousel['Programacion']['Question']['title']?></p>
+								<a class="btn btn-lg btnCarousel" href="questions/view/<?php echo $questionsCarousel['Programacion']['Question']['id'];?>" role="button">Responder &raquo;</a>
+							</div>
+
+					</div>
+
+					<div class="item">
+						<?php echo $this->Html->image('rogo/carouselCiencia.png', array('alt' => 'Imagen carrousel', 'class' => 'carouselImageContainer')); ?>
+						<div class="carousel-caption">
+							<h1>Ciencia</h1>
+							<p><?php echo $questionsCarousel['Ciencia']['Question']['title']?></p>
+							<a class="btn btn-lg btnCarousel" href="questions/view/<?php echo $questionsCarousel['Ciencia']['Question']['id'];?>" role="button">Responder &raquo;</a>
+						</div>
+					</div>
+
+					<div class="item">
+						<?php echo $this->Html->image('rogo/carouselDeporte.png', array('alt' => 'Imagen carrousel', 'class' => 'carouselImageContainer')); ?>
+						<div class="carousel-caption">
+							<h1>Deporte</h1>
+							<p><?php echo $questionsCarousel['Deporte']['Question']['title']?></p>
+							<a class="btn btn-lg btnCarousel" href="questions/view/<?php echo $questionsCarousel['Deporte']['Question']['id'];?>" role="button">Responder &raquo;</a>
+						</div>
+					</div>
+
+					<div class="item">
+						<?php echo $this->Html->image('rogo/carouselArte.png', array('alt' => 'Imagen carrousel', 'class' => 'carouselImageContainer')); ?>
+						<div class="carousel-caption">
+							<h1>Arte</h1>
+							<p><?php echo $questionsCarousel['Arte']['Question']['title']?></p>
+							<a class="btn btn-lg btnCarousel" href="questions/view/<?php echo $questionsCarousel['Arte']['Question']['id']?>" role="button">Responder &raquo;</a>
+						</div>
+					</div>
+
+					<div class="item">
+						<?php echo $this->Html->image('rogo/carouselTecnologia.png', array('alt' => 'Imagen carrousel', 'class' => 'carouselImageContainer')); ?>
+						<div class="carousel-caption">
+							<h1>Tecnologia</h1>
+							<p><?php echo $questionsCarousel['Tecnologia']['Question']['title']?></p>
+							<a class="btn btn-lg btnCarousel" href="questions/view/<?php echo $questionsCarousel['Tecnologia']['Question']['id']?>" role="button">Responder &raquo;</a>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+<!-- End of REGISTRO/USER DATA + CAROUSEL -->
+<?php
+$this->end();
+?>
+<!-- SEPARADOR -->
+<div class="col-xs-12 separator">
+</div>
+<!-- Fin Separador-->
+<!-- Main content -->
+<div class="col-xs-12">
+	<div class="row">
+		<!-- Principio Historial -->
+		<div class="col-xs-12 col-sm-8 text-center">
+			<h3 class="indexFecha"><?php echo $date;?></h3>
+			<div class="row">
+				<!-- Programacion -->
+				<div class="col-xs-12 text-center">
+					<h1 class="indexCategoria"><span class="icon-terminal indexIconosCategoria"></span><a href="#">Programacion</a></h1>
+					<!-- PreguntasProgramacion -->
+					<?php
+					foreach($questionsProgramacion as $data){
+					?>
+						<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+							<div class="row">
+								<!-- Encabezado pregunta -->
+								<div class="col-xs-12 encabezadoContainer">
+									<p><a href="questions/view/<?php echo $data['Question']['id']; ?>"><?php echo $data['Question']['title']; ?></a></p>
+								</div>
+								<!-- Fin Encabezado pregunta -->
+								<!-- Cuerpo pregunta -->
+								<div class="col-xs-12">
+									<p class="textoPregunta"><?php echo $data['Question']['description']; ?></p>
+								</div>
+								<!-- Fin Cuerpo pregunta -->
+								<!-- footer pregunta -->
+								<div class="col-xs-12 indexVoto text-left">
+									<div class="row">
+										<div class="col-xs-6 text-left">
+											<a class="btn btn-lg btnPregunta" href="questions/view/<?php echo $data['Question']['id']; ?>" role="button">Responder &raquo;</a>
+										</div>
+										<div class="col-xs-6 text-center">
+											<a href="questions/view/<?php echo $data['Question']['id']; ?>"><span class="puntuacion"><?php echo $data['VoteQuestion']; ?> votes</span></a>
+										</div>
+										<div class="col-xs-12 col-md-8 col-md-offset-4 text-right avatarContainer">
+											<a href="users/view/<?php echo $data['User']['id']; ?>">
+												<?php echo $this->Html->image('rogo/'.$data['User']['logo'], array('alt' => 'avatar usuario','class' => 'img-rounded avatarPregunta')); ?>
+												<span><?php echo $data['User']['username']; ?></span>
+											</a>
+										</div>
+									</div>
+									<!-- Fin footer pregunta -->
+								</div>
+							</div>
+						</div>
+					<?php
+					}
+					?>
+				</div>
+				<!-- Fin Programacion -->
+				<!-- Ciencia -->
+				<div class="col-xs-12 text-center">
+					<h1 class="indexCategoria"><span class="icon-atomIcon indexIconosCategoria"></span><a href="#">Ciencia</a></h1>
+					<!-- PreguntasCiencia -->
+					<?php
+					foreach($questionsCiencia as $data){
+						?>
+						<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+							<div class="row">
+								<!-- Encabezado pregunta -->
+								<div class="col-xs-12 encabezadoContainer">
+									<p><a href="questions/view/<?php echo $data['Question']['id']; ?>"><?php echo $data['Question']['title']; ?></a></p>
+								</div>
+								<!-- Fin Encabezado pregunta -->
+								<!-- Cuerpo pregunta -->
+								<div class="col-xs-12">
+									<p class="textoPregunta"><?php echo $data['Question']['description']; ?></p>
+								</div>
+								<!-- Fin Cuerpo pregunta -->
+								<!-- footer pregunta -->
+								<div class="col-xs-12 indexVoto text-left">
+									<div class="row">
+										<div class="col-xs-6 text-left">
+											<a class="btn btn-lg btnPregunta" href="questions/view/<?php echo $data['Question']['id']; ?>" role="button">Responder &raquo;</a>
+										</div>
+										<div class="col-xs-6 text-center">
+											<a href="questions/view/<?php echo $data['Question']['id']; ?>"><span class="puntuacion"><?php echo $data['VoteQuestion']; ?> votes</span></a>
+										</div>
+										<div class="col-xs-12 col-md-8 col-md-offset-4 text-right avatarContainer">
+											<a href="users/view/<?php echo $data['User']['id']; ?>">
+												<?php echo $this->Html->image('rogo/'.$data['User']['logo'], array('alt' => 'avatar usuario','class' => 'img-rounded avatarPregunta')); ?>
+												<span><?php echo $data['User']['username']; ?></span>
+											</a>
+										</div>
+									</div>
+									<!-- Fin footer pregunta -->
+								</div>
+							</div>
+						</div>
+						<?php
+					}
+					?>
+				</div>
+				<!-- Fin Ciencia -->
+				<!-- Deporte -->
+				<div class="col-xs-12 text-center">
+					<h1 class="indexCategoria"><span class="icon-trophyIcon2 indexIconosCategoria"></span><a href="#">Deporte</a></h1>
+					<!-- PreguntasDeporte -->
+					<?php
+					foreach($questionsDeporte as $data){
+						?>
+						<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+							<div class="row">
+								<!-- Encabezado pregunta -->
+								<div class="col-xs-12 encabezadoContainer">
+									<p><a href="questions/view/<?php echo $data['Question']['id']; ?>"><?php echo $data['Question']['title']; ?></a></p>
+								</div>
+								<!-- Fin Encabezado pregunta -->
+								<!-- Cuerpo pregunta -->
+								<div class="col-xs-12">
+									<p class="textoPregunta"><?php echo $data['Question']['description']; ?></p>
+								</div>
+								<!-- Fin Cuerpo pregunta -->
+								<!-- footer pregunta -->
+								<div class="col-xs-12 indexVoto text-left">
+									<div class="row">
+										<div class="col-xs-6 text-left">
+											<a class="btn btn-lg btnPregunta" href="questions/view/<?php echo $data['Question']['id']; ?>" role="button">Responder &raquo;</a>
+										</div>
+										<div class="col-xs-6 text-center">
+											<a href="questions/view/<?php echo $data['Question']['id']; ?>"><span class="puntuacion"><?php echo $data['VoteQuestion']; ?> votes</span></a>
+										</div>
+										<div class="col-xs-12 col-md-8 col-md-offset-4 text-right avatarContainer">
+											<a href="users/view/<?php echo $data['User']['id']; ?>">
+												<?php echo $this->Html->image('rogo/'.$data['User']['logo'], array('alt' => 'avatar usuario','class' => 'img-rounded avatarPregunta')); ?>
+												<span><?php echo $data['User']['username']; ?></span>
+											</a>
+										</div>
+									</div>
+									<!-- Fin footer pregunta -->
+								</div>
+							</div>
+						</div>
+						<?php
+					}
+					?>
+				</div>
+				<!-- Fin Deporte -->
+				<!-- Arte -->
+				<div class="col-xs-12 text-center">
+					<h1 class="indexCategoria"><span class="icon-paletteIcon1 indexIconosCategoria"></span><a href="#">Arte</a></h1>
+					<!-- PreguntasArte -->
+					<?php
+					foreach($questionsArte as $data){
+						?>
+						<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+							<div class="row">
+								<!-- Encabezado pregunta -->
+								<div class="col-xs-12 encabezadoContainer">
+									<p><a href="questions/view/<?php echo $data['Question']['id']; ?>"><?php echo $data['Question']['title']; ?></a></p>
+								</div>
+								<!-- Fin Encabezado pregunta -->
+								<!-- Cuerpo pregunta -->
+								<div class="col-xs-12">
+									<p class="textoPregunta"><?php echo $data['Question']['description']; ?></p>
+								</div>
+								<!-- Fin Cuerpo pregunta -->
+								<!-- footer pregunta -->
+								<div class="col-xs-12 indexVoto text-left">
+									<div class="row">
+										<div class="col-xs-6 text-left">
+											<a class="btn btn-lg btnPregunta" href="questions/view/<?php echo $data['Question']['id']; ?>" role="button">Responder &raquo;</a>
+										</div>
+										<div class="col-xs-6 text-center">
+											<a href="questions/view/<?php echo $data['Question']['id']; ?>"><span class="puntuacion"><?php echo $data['VoteQuestion']; ?> votes</span></a>
+										</div>
+										<div class="col-xs-12 col-md-8 col-md-offset-4 text-right avatarContainer">
+											<a href="users/view/<?php echo $data['User']['id']; ?>">
+												<?php echo $this->Html->image('rogo/'.$data['User']['logo'], array('alt' => 'avatar usuario','class' => 'img-rounded avatarPregunta')); ?>
+												<span><?php echo $data['User']['username']; ?></span>
+											</a>
+										</div>
+									</div>
+									<!-- Fin footer pregunta -->
+								</div>
+							</div>
+						</div>
+						<?php
+					}
+					?>
+				</div>
+				<!-- Fin Arte -->
+				<!-- Tecnologia -->
+				<div class="col-xs-12 text-center">
+					<h1 class="indexCategoria"><span class="icon-chipIcon indexIconosCategoria"></span><a href="#">Tecnologia</a></h1>
+					<!-- PreguntasTecnologia -->
+					<?php
+					foreach($questionsTecnologia as $data){
+						?>
+						<div class="col-md-9 col-md-offset-1 col-xs-12 indexPreguntaContainer">
+							<div class="row">
+								<!-- Encabezado pregunta -->
+								<div class="col-xs-12 encabezadoContainer">
+									<p><a href="questions/view/<?php echo $data['Question']['id']; ?>"><?php echo $data['Question']['title']; ?></a></p>
+								</div>
+								<!-- Fin Encabezado pregunta -->
+								<!-- Cuerpo pregunta -->
+								<div class="col-xs-12">
+									<p class="textoPregunta"><?php echo $data['Question']['description']; ?></p>
+								</div>
+								<!-- Fin Cuerpo pregunta -->
+								<!-- footer pregunta -->
+								<div class="col-xs-12 indexVoto text-left">
+									<div class="row">
+										<div class="col-xs-6 text-left">
+											<a class="btn btn-lg btnPregunta" href="questions/view/<?php echo $data['Question']['id']; ?>" role="button">Responder &raquo;</a>
+										</div>
+										<div class="col-xs-6 text-center">
+											<a href="questions/view/<?php echo $data['Question']['id']; ?>"><span class="puntuacion"><?php echo $data['VoteQuestion']; ?> votes</span></a>
+										</div>
+										<div class="col-xs-12 col-md-8 col-md-offset-4 text-right avatarContainer">
+											<a href="users/view/<?php echo $data['User']['id']; ?>">
+												<?php echo $this->Html->image('rogo/'.$data['User']['logo'], array('alt' => 'avatar usuario','class' => 'img-rounded avatarPregunta')); ?>
+												<span><?php echo $data['User']['username']; ?></span>
+											</a>
+										</div>
+									</div>
+									<!-- Fin footer pregunta -->
+								</div>
+							</div>
+						</div>
+						<?php
+					}
+					?>
+				</div>
+				<!-- Fin Tecnologia -->
+			</div>
+		</div>
+		<!-- Fin Historial -->
+		<!-- Sidebar -->
+		<div class="col-xs-12 col-sm-4">
+			<div class="row">
+				<div class="indexCategoriaContainer col-xs-12">
+					<a href="#" class="list-group-item"><span class="icon-terminal menuIconosCategoria" aria-hidden="true"></span>Programacion</a>
+					<a href="#" class="list-group-item "><span class="icon-atomIcon menuIconosCategoria"></span>Ciencia</a>
+					<a href="#" class="list-group-item "><span class="icon-trophyIcon2 menuIconosCategoria"></span>Deporte</a>
+					<a href="#" class="list-group-item "><span class="icon-paletteIcon1 menuIconosCategoria"></span>Arte</a>
+					<a href="#" class="list-group-item "><span class="icon-chipIcon menuIconosCategoria"></span>Tecnologia</a>
+				</div>
+
+				<input hidden id="inputDate" name="inputDate" value="<?php echo $date;?>">
+				<div id="datepicker" class="col-xs-12">
+				</div>
+			</div>
+		</div>
+		<!-- End of Sidebar -->
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Question'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Answers'), array('controller' => 'answers', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Answer'), array('controller' => 'answers', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Vote Questions'), array('controller' => 'vote_questions', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Vote Question'), array('controller' => 'vote_questions', 'action' => 'add')); ?> </li>
-	</ul>
-</div>
+<!-- End of Main content-->

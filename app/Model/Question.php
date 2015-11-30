@@ -107,4 +107,58 @@ class Question extends AppModel {
 		)
 	);
 
+	public function mostVoted($day,$category){
+		$data = $this->find('all',array(
+			'conditions' => array(
+				array('category' => $category),
+				array('date' => $day)
+			),
+			'fields' => array('Question.id'),
+			'recursive' => -1
+		));
+
+		$mosVoted = $data[0]['Question']['id'];
+		$points = $this->getVotes($data[0]['Question']['id']);
+
+		foreach($data as $row){
+			$tempo = $this->getVotes($row['Question']['id']);
+			if( $tempo >= $points){
+				$mosVoted = $row['Question']['id'];
+				$points=$tempo;
+			}
+		}
+		$mosVoted = $this->find('first',array('conditions' => array('Question.id' => $mosVoted),'recursive' => 0));
+		$mosVoted['VoteQuestion'] = $points;
+		return $mosVoted;
+	}
+
+	public function getLatest($day,$category,$amount){
+		$latest = $this->find('all', array(
+			'conditions' => array(
+				array('category' => $category),
+				array('date' => $day)
+			),
+			'order' => array('Question.id' => 'DESC'),
+			'recursive' => 0,
+			'limit' => $amount
+		));
+		$array = array();
+		foreach($latest as $row){
+			$row['VoteQuestion'] = $this->getVotes($row['Question']['id']);
+			array_push($array,$row);
+		}
+		return $array;
+	}
+
+	public function getVotes($idQuestion){
+		$pos = $this->query("SELECT COUNT(*) FROM vote_questions WHERE question_id=$idQuestion AND value = 1;");
+		$neg = $this->query("SELECT COUNT(*) FROM vote_questions WHERE question_id=$idQuestion AND value = 0;");
+
+		$posi = $pos[0][0]["COUNT(*)"];
+		$nega = $neg[0][0]["COUNT(*)"];
+
+		return $posi-$nega;
+	}
+
+
 }

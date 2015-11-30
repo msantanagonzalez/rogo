@@ -1,5 +1,6 @@
 <?php
 App::uses('AppController', 'Controller');
+App::import('Controller', 'Users');
 /**
  * Questions Controller
  *
@@ -21,8 +22,50 @@ class QuestionsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Question->recursive = 0;
-		$this->set('questions', $this->Paginator->paginate());
+			if(isset($this->request->params['named']['date'])){
+				$today = $this->request->params['named']['date'];
+			}else{
+				$today = date("Y-m-d");
+			}
+			echo $today;
+			$day = '2015-11-17'; //Sets the day
+			$dataCarousel = array();
+
+			//Get mostVoted on "Programacion"
+			$mostVoted = $this->Question->mostVoted($day,'Programacion');
+			$dataCarousel['Programacion'] = $mostVoted;
+			//Get mostVoted on "Ciencia"
+			$mostVoted = $this->Question->mostVoted($day,'Ciencia');
+			$dataCarousel['Ciencia'] = $mostVoted;
+			//Get mostVoted on "Deporte"
+			$mostVoted = $this->Question->mostVoted($day,'Deporte');
+			$dataCarousel['Deporte'] = $mostVoted;
+			//Get mostVoted on "Arte"
+			$mostVoted = $this->Question->mostVoted($day,'Arte');
+			$dataCarousel['Arte'] = $mostVoted;
+			//Get mostVoted on "Tecnologia"
+			$mostVoted = $this->Question->mostVoted($day,'Tecnologia');
+			$dataCarousel['Tecnologia'] = $mostVoted;
+
+
+			//Get the lastest "Programacion" questions
+			$dataProgramacion = $this->Question->getLatest($day,'Programacion',2);
+			//Get the lastest "Ciencia" questions
+			$dataCiencia = $this->Question->getLatest($day,'Ciencia',2);
+			//Get the lastest "Deporte" questions
+			$dataDeporte = $this->Question->getLatest($day,'Deporte',2);
+			//Get the lastest "Arte" questions
+			$dataArte = $this->Question->getLatest($day,'Arte',2);
+			//Get the lastest "Tecnologia" questions
+			$dataTecnologia = $this->Question->getLatest($day,'Tecnologia',2);
+
+			$this->set('date', $day);
+			$this->set('questionsCarousel', $dataCarousel);
+			$this->set('questionsProgramacion', $dataProgramacion);
+			$this->set('questionsCiencia', $dataCiencia);
+			$this->set('questionsDeporte', $dataDeporte);
+			$this->set('questionsArte', $dataArte);
+			$this->set('questionsTecnologia', $dataTecnologia);
 	}
 
 /**
