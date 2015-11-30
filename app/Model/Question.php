@@ -108,6 +108,7 @@ class Question extends AppModel {
 	);
 
 	public function mostVoted($day,$category){
+		//Get the most voted on a day
 		$data = $this->find('all',array(
 			'conditions' => array(
 				array('category' => $category),
@@ -116,6 +117,18 @@ class Question extends AppModel {
 			'fields' => array('Question.id'),
 			'recursive' => -1
 		));
+
+		if(empty($data)){
+			//Get the latest most voted question
+			$data = $this->find('all',array(
+				'conditions' => array(
+					array('category' => $category)
+				),
+				'fields' => array('Question.id'),
+				'recursive' => -1
+			));
+
+		}
 
 		$mosVoted = $data[0]['Question']['id'];
 		$points = $this->getVotes($data[0]['Question']['id']);

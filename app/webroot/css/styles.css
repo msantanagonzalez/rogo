@@ -438,6 +438,10 @@ h1,h2,h3{
   width: 30px;
   height: auto;
 }
+thead{
+    color: #111314;
+    background-color: #fff;
+}
 /*------------------- Modificaciones sobre clases boostrap ---------------------*/
 .carousel-indicators .active {
   width: 12px;
@@ -512,64 +516,14 @@ a.list-group-item:hover{
 .img-rounded{
   margin-bottom: 13px;
 }
-/* ------------------------- Calendario  -----------------------*/
-.cal{
-  margin-top: 20px;
-  color: #404040;
+.alert-noQuestion {
+    color: #fff;
+    background-color: #111314;
+    border-color: #111314;
 }
-
-caption{
-  line-height: 32px;
-  font-weight: bold;
-  color: #e2e2e2;
-  text-align: center;
-  text-shadow: 0 -1px black;
-  background: #111314;
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #313131;
+.alert-noQuestion h2{
+    color: #fff;
 }
-caption a{
-  line-height: 32px;
-  padding: 0 10px;
-  font-size: 15px;
-  color: #4ac143;
-}
-
-caption a:hover { color: #fff; }
-caption a.prev { float: left; }
-caption a.next { float: right; }
-
-th{
-  text-align: center;
-  font-size: 15px;
-  color: #111314;
-  text-transform: uppercase;
-  background: #f3f3f3;
-}
-
-td {
-  font-size: 12px;
-  font-weight: bold;
-  border-bottom: 1px solid #c2c2c2;
-  border-top: 1px solid #c2c2c2;
-  border-left: 1px solid #c2c2c2;
-  border-right: 1px solid #c2c2c2;
-}
-td a {
-  line-height: 28px;
-  color: #666;
-}
-
-.off{
-  text-decoration: line-through;
-}
-
-td.active a, a:active {
-   margin: -1px;
-   color: #f3f3f3;
-   background: #4ac143;
-   border: 1px solid #4ac143;
- }
 /*--------- Media Queries(Texto responsive) -------*/
 /* Large desktop */
 @media (min-width: 1200px){

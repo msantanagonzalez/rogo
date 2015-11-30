@@ -23,12 +23,12 @@ class QuestionsController extends AppController {
  */
 	public function index() {
 			if(isset($this->request->params['named']['date'])){
-				$today = $this->request->params['named']['date'];
+				$day = $this->request->params['named']['date'];
 			}else{
-				$today = date("Y-m-d");
+				$day = date("Y-m-d");
 			}
-			echo $today;
-			$day = '2015-11-17'; //Sets the day
+			//echo $today;
+			//$day = '2015-11-17'; //Sets the day
 			$dataCarousel = array();
 
 			//Get mostVoted on "Programacion"

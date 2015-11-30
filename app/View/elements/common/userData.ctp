@@ -14,7 +14,9 @@ $this->start('homeUserData');
     <p class="homeUserData"><?php echo "Email: ".AuthComponent::user('email'); ?></p>
     <p>
         <a class="btn btn-sm btn-default" href="" role="button">Edit</a>
-        <a class="btn btn-sm btn-default" href="users/logout" role="button">Logout</a>
+        <?php
+        echo $this->Html->link('Logout', '/users/logout', array('class' => 'button btn btn-sm btn-default'));
+        ?>
     </p>
 <?php
 $this->end();
